@@ -1,0 +1,3 @@
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c21f", ATTRS{serial}=="2A449F5F" ,GROUP="users", MODE="0666"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="15d1", GROUP="users", MODE="0666"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", ATTRS{serial}=="0001", GROUP="users", MODE="0666"

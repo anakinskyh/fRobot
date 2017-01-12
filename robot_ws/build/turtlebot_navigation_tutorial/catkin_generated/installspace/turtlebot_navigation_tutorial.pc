@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/Robot/robot_ws/install
+
+Name: turtlebot_navigation_tutorial
+Description: Description of turtlebot_navigation_tutorial
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/anakin/Workspace/Robot/robot_ws/install/lib 
+Requires: 

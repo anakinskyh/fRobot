@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/Robot/robot_ws/install
+
+Name: yocs_cmd_vel_mux
+Description: Description of yocs_cmd_vel_mux
+Version: 0.9.1
+Cflags: -I/home/anakin/Workspace/Robot/robot_ws/install/include
+Libs: -L/home/anakin/Workspace/Robot/robot_ws/install/lib -lyocs_cmd_vel_mux_nodelet -lyaml-cpp
+Requires: roscpp pluginlib nodelet dynamic_reconfigure geometry_msgs

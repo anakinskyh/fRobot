@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/Robot/robot_ws/devel
+
+Name: yocs_math_toolkit
+Description: Description of yocs_math_toolkit
+Version: 0.9.1
+Cflags: -I/home/anakin/Workspace/Robot/robot_ws/src/yujin_ocs/yocs_math_toolkit/include
+Libs: -L/home/anakin/Workspace/Robot/robot_ws/devel/lib -lyocs_math_toolkit
+Requires: ecl_build ecl_config ecl_exceptions ecl_formatters ecl_linear_algebra geometry_msgs roscpp tf

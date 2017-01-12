@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/Robot/robot_ws/install
+
+Name: turn_signal
+Description: Description of turn_signal
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/anakin/Workspace/Robot/robot_ws/install/lib 
+Requires: 

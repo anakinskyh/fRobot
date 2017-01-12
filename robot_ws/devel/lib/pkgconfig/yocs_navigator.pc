@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/Robot/robot_ws/devel
+
+Name: yocs_navigator
+Description: Description of yocs_navigator
+Version: 0.9.1
+Cflags: -I/home/anakin/Workspace/Robot/robot_ws/src/yujin_ocs/yocs_navigator/include -I/usr/include
+Libs: -L/home/anakin/Workspace/Robot/robot_ws/devel/lib -lyocs_basic_move_controller -lyocs_semantic_navigator -l:/usr/lib/x86_64-linux-gnu/libboost_system.so
+Requires: roscpp actionlib tf yocs_math_toolkit move_base_msgs nav_msgs yocs_msgs

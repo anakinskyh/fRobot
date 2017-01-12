@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="turn_signal" type="cmd_vel_filter.py" name="turn_signal">
+        <param name="delay" value="0.5" />
+        <!--<param name="queue_size" value="10.0" />-->
+        <param name="sub_topic" value="raw_cmd_vel" />
+        <param name="pub_topic" value="cmd_vel" />
+    </node>
+
+</launch>

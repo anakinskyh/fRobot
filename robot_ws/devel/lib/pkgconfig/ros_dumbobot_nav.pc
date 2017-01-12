@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/Robot/robot_ws/devel
+
+Name: ros_dumbobot_nav
+Description: Description of ros_dumbobot_nav
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/anakin/Workspace/Robot/robot_ws/devel/lib 
+Requires: 

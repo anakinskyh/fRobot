@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/Robot/robot_ws/install
+
+Name: led_strip
+Description: Description of led_strip
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/anakin/Workspace/Robot/robot_ws/install/lib 
+Requires: 

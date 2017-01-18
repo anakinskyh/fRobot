@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/driver_base_generate_messages_nodejs"
-  "/home/anakin/Workspace/Robot/robot_ws/devel/share/gennodejs/ros/driver_base/msg/ConfigString.js"
-  "/home/anakin/Workspace/Robot/robot_ws/devel/share/gennodejs/ros/driver_base/msg/SensorLevels.js"
-  "/home/anakin/Workspace/Robot/robot_ws/devel/share/gennodejs/ros/driver_base/msg/ConfigValue.js"
+  "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/gennodejs/ros/driver_base/msg/SensorLevels.js"
+  "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/gennodejs/ros/driver_base/msg/ConfigValue.js"
+  "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/gennodejs/ros/driver_base/msg/ConfigString.js"
 )
 
 # Per-language clean rules from dependency scanning.

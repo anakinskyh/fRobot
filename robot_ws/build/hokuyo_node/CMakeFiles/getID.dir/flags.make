@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"hokuyo_node\"
 
-CXX_INCLUDES = -I/home/anakin/Workspace/Robot/robot_ws/devel/include -I/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/include -I/home/anakin/Workspace/Robot/robot_ws/src/driver_common/driver_base/include -I/opt/ros/kinetic/include 
+CXX_INCLUDES = -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/include -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/driver_common/driver_base/include -I/opt/ros/kinetic/include 
 

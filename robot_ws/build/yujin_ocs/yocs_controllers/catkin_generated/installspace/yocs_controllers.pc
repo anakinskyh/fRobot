@@ -1,8 +1,0 @@
-prefix=/home/anakin/Workspace/Robot/robot_ws/install
-
-Name: yocs_controllers
-Description: Description of yocs_controllers
-Version: 0.9.1
-Cflags: -I/home/anakin/Workspace/Robot/robot_ws/install/include
-Libs: -L/home/anakin/Workspace/Robot/robot_ws/install/lib 
-Requires: roscpp

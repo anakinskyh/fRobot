@@ -1,8 +1,8 @@
-prefix=/home/anakin/Workspace/Robot/robot_ws/install
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install
 
 Name: ros_dumbobot_nav
 Description: Description of ros_dumbobot_nav
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/anakin/Workspace/Robot/robot_ws/install/lib 
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/lib 
 Requires: 

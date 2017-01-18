@@ -1,8 +1,0 @@
-prefix=/home/anakin/Workspace/Robot/robot_ws/devel
-
-Name: yocs_diff_drive_pose_controller
-Description: Description of yocs_diff_drive_pose_controller
-Version: 0.9.1
-Cflags: -I/home/anakin/Workspace/Robot/robot_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/include
-Libs: -L/home/anakin/Workspace/Robot/robot_ws/devel/lib -lyocs_diff_drive_pose_controller -lyocs_diff_drive_pose_controller_nodelet
-Requires: ecl_threads geometry_msgs nodelet pluginlib roscpp sensor_msgs std_msgs tf yocs_controllers yocs_math_toolkit

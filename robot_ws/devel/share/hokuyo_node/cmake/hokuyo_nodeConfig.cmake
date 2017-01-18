@@ -67,14 +67,14 @@ set(hokuyo_node_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(hokuyo_node_SOURCE_PREFIX /home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node)
-  set(hokuyo_node_DEVEL_PREFIX /home/anakin/Workspace/Robot/robot_ws/devel)
+  set(hokuyo_node_SOURCE_PREFIX /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node)
+  set(hokuyo_node_DEVEL_PREFIX /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel)
   set(hokuyo_node_INSTALL_PREFIX "")
   set(hokuyo_node_PREFIX ${hokuyo_node_DEVEL_PREFIX})
 else()
   set(hokuyo_node_SOURCE_PREFIX "")
   set(hokuyo_node_DEVEL_PREFIX "")
-  set(hokuyo_node_INSTALL_PREFIX /home/anakin/Workspace/Robot/robot_ws/install)
+  set(hokuyo_node_INSTALL_PREFIX /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install)
   set(hokuyo_node_PREFIX ${hokuyo_node_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(hokuyo_node_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/anakin/Workspace/Robot/robot_ws/devel/include;/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/include " STREQUAL " ")
+if(NOT "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include;/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/include " STREQUAL " ")
   set(hokuyo_node_INCLUDE_DIRS "")
-  set(_include_dirs "/home/anakin/Workspace/Robot/robot_ws/devel/include;/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/include")
+  set(_include_dirs "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include;/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -103,7 +103,7 @@ if(NOT "/home/anakin/Workspace/Robot/robot_ws/devel/include;/home/anakin/Workspa
         message(FATAL_ERROR "Project 'hokuyo_node' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  Ask the maintainer 'Chad Rockey <chadrockey@gmail.com>' to fix it.")
       endif()
     else()
-      message(FATAL_ERROR "Project 'hokuyo_node' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/${idir}'.  Ask the maintainer 'Chad Rockey <chadrockey@gmail.com>' to fix it.")
+      message(FATAL_ERROR "Project 'hokuyo_node' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/${idir}'.  Ask the maintainer 'Chad Rockey <chadrockey@gmail.com>' to fix it.")
     endif()
     _list_append_unique(hokuyo_node_INCLUDE_DIRS ${include})
   endforeach()
@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/anakin/Workspace/Robot/robot_ws/devel/lib;/home/anakin/Workspace/Robot/robot_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib;/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

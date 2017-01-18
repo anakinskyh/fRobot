@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel
+
+Name: sim_fbot
+Description: Description of sim_fbot
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib 
+Requires: 

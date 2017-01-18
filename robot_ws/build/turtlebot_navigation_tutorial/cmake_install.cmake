@@ -1,8 +1,8 @@
-# Install script for directory: /home/anakin/Workspace/Robot/robot_ws/src/turtlebot_navigation_tutorial
+# Install script for directory: /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/turtlebot_navigation_tutorial
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/anakin/Workspace/Robot/robot_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/anakin/Workspace/Robot/robot_ws/build/turtlebot_navigation_tutorial/catkin_generated/installspace/turtlebot_navigation_tutorial.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/turtlebot_navigation_tutorial/catkin_generated/installspace/turtlebot_navigation_tutorial.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot_navigation_tutorial/cmake" TYPE FILE FILES
-    "/home/anakin/Workspace/Robot/robot_ws/build/turtlebot_navigation_tutorial/catkin_generated/installspace/turtlebot_navigation_tutorialConfig.cmake"
-    "/home/anakin/Workspace/Robot/robot_ws/build/turtlebot_navigation_tutorial/catkin_generated/installspace/turtlebot_navigation_tutorialConfig-version.cmake"
+    "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/turtlebot_navigation_tutorial/catkin_generated/installspace/turtlebot_navigation_tutorialConfig.cmake"
+    "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/turtlebot_navigation_tutorial/catkin_generated/installspace/turtlebot_navigation_tutorialConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot_navigation_tutorial" TYPE FILE FILES "/home/anakin/Workspace/Robot/robot_ws/src/turtlebot_navigation_tutorial/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot_navigation_tutorial" TYPE FILE FILES "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/turtlebot_navigation_tutorial/package.xml")
 endif()
 

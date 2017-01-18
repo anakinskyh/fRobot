@@ -1,8 +1,0 @@
-prefix=/home/anakin/Workspace/Robot/robot_ws/install
-
-Name: yocs_waypoint_provider
-Description: Description of yocs_waypoint_provider
-Version: 0.9.1
-Cflags: 
-Libs: -L/home/anakin/Workspace/Robot/robot_ws/install/lib -lyaml-cpp
-Requires: roscpp visualization_msgs yocs_msgs

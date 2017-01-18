@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/driver_base_generate_messages_py"
-  "/home/anakin/Workspace/Robot/robot_ws/devel/lib/python2.7/dist-packages/driver_base/msg/_ConfigString.py"
-  "/home/anakin/Workspace/Robot/robot_ws/devel/lib/python2.7/dist-packages/driver_base/msg/_SensorLevels.py"
-  "/home/anakin/Workspace/Robot/robot_ws/devel/lib/python2.7/dist-packages/driver_base/msg/_ConfigValue.py"
-  "/home/anakin/Workspace/Robot/robot_ws/devel/lib/python2.7/dist-packages/driver_base/msg/__init__.py"
+  "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/python2.7/dist-packages/driver_base/msg/_SensorLevels.py"
+  "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/python2.7/dist-packages/driver_base/msg/_ConfigValue.py"
+  "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/python2.7/dist-packages/driver_base/msg/_ConfigString.py"
+  "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/python2.7/dist-packages/driver_base/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/getFirmwareVersion.dir/src/getFirmwareVersion.cpp.o"
-  "/home/anakin/Workspace/Robot/robot_ws/devel/lib/hokuyo_node/getFirmwareVersion.pdb"
-  "/home/anakin/Workspace/Robot/robot_ws/devel/lib/hokuyo_node/getFirmwareVersion"
+  "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/hokuyo_node/getFirmwareVersion.pdb"
+  "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/hokuyo_node/getFirmwareVersion"
 )
 
 # Per-language clean rules from dependency scanning.

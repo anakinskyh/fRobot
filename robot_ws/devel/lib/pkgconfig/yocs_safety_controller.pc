@@ -1,8 +1,0 @@
-prefix=/home/anakin/Workspace/Robot/robot_ws/devel
-
-Name: yocs_safety_controller
-Description: Description of yocs_safety_controller
-Version: 0.9.1
-Cflags: -I/home/anakin/Workspace/Robot/robot_ws/src/yujin_ocs/yocs_safety_controller/include
-Libs: -L/home/anakin/Workspace/Robot/robot_ws/devel/lib -lyocs_safety_controller_nodelet
-Requires: ecl_threads geometry_msgs nodelet pluginlib sensor_msgs std_msgs roscpp yocs_controllers

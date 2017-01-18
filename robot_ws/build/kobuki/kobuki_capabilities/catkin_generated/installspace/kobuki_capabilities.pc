@@ -1,8 +1,0 @@
-prefix=/home/anakin/Workspace/Robot/robot_ws/install
-
-Name: kobuki_capabilities
-Description: Description of kobuki_capabilities
-Version: 0.7.2
-Cflags: 
-Libs: -L/home/anakin/Workspace/Robot/robot_ws/install/lib 
-Requires: 

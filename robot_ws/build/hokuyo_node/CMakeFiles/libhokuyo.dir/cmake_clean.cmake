@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/libhokuyo.dir/src/hokuyo.cpp.o"
-  "/home/anakin/Workspace/Robot/robot_ws/devel/lib/liblibhokuyo.pdb"
-  "/home/anakin/Workspace/Robot/robot_ws/devel/lib/liblibhokuyo.so"
+  "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/liblibhokuyo.pdb"
+  "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/liblibhokuyo.so"
 )
 
 # Per-language clean rules from dependency scanning.

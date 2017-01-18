@@ -1,8 +1,8 @@
-prefix=/home/anakin/Workspace/Robot/robot_ws/devel
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel
 
 Name: turtlebot_stage_tutorial
 Description: Description of turtlebot_stage_tutorial
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/anakin/Workspace/Robot/robot_ws/devel/lib 
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib 
 Requires: 

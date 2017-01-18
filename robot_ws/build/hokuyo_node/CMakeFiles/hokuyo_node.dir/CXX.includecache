@@ -6,23 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/anakin/Workspace/Robot/robot_ws/devel/include/driver_base/SensorLevels.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
-/home/anakin/Workspace/Robot/robot_ws/devel/include/hokuyo_node/HokuyoConfig.h
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include/hokuyo_node/HokuyoConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -40,7 +24,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/anakin/Workspace/Robot/robot_ws/src/driver_common/driver_base/include/driver_base/driver.h
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/driver_common/driver_base/include/driver_base/driver.h
 ros/ros.h
 -
 boost/function.hpp
@@ -54,7 +38,7 @@ stdarg.h
 cstdio
 -
 
-/home/anakin/Workspace/Robot/robot_ws/src/driver_common/driver_base/include/driver_base/driver_node.h
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/driver_common/driver_base/include/driver_base/driver_node.h
 diagnostic_updater/diagnostic_updater.h
 -
 self_test/self_test.h
@@ -72,7 +56,7 @@ signal.h
 dynamic_reconfigure/server.h
 -
 
-/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/include/hokuyo_node/hokuyo.h
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/include/hokuyo_node/hokuyo.h
 stdexcept
 -
 termios.h
@@ -86,11 +70,11 @@ stdint.h
 limits
 -
 
-/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/src/hokuyo_node.cpp
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/src/hokuyo_node.cpp
 driver_base/driver.h
-/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/src/driver_base/driver.h
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/src/driver_base/driver.h
 driver_base/driver_node.h
-/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/src/driver_base/driver_node.h
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/src/driver_base/driver_node.h
 diagnostic_updater/publisher.h
 -
 assert.h
@@ -104,13 +88,13 @@ sstream
 iomanip
 -
 ros/ros.h
-/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/src/ros/ros.h
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/src/ros/ros.h
 sensor_msgs/LaserScan.h
-/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/src/sensor_msgs/LaserScan.h
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/src/sensor_msgs/LaserScan.h
 hokuyo_node/HokuyoConfig.h
-/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/src/hokuyo_node/HokuyoConfig.h
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/src/hokuyo_node/HokuyoConfig.h
 hokuyo_node/hokuyo.h
-/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/src/hokuyo_node/hokuyo.h
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/src/hokuyo_node/hokuyo.h
 
 /opt/ros/kinetic/include/XmlRpc.h
 string
@@ -674,6 +658,8 @@ cstdarg
 ros/macros.h
 -
 map
+-
+vector
 -
 log4cxx/level.h
 /opt/ros/kinetic/include/ros/log4cxx/level.h

@@ -14,20 +14,20 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/home/anakin/Workspace/Robot/robot_ws/src/turtlebot_create/create_driver"
+echo_and_run cd "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/turtlebot_create/create_driver"
 
 # snsure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/home/anakin/Workspace/Robot/robot_ws/install/lib/python2.7/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/lib/python2.7/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/anakin/Workspace/Robot/robot_ws/install/lib/python2.7/dist-packages:/home/anakin/Workspace/Robot/robot_ws/build/lib/python2.7/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/anakin/Workspace/Robot/robot_ws/build" \
+    PYTHONPATH="/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/lib/python2.7/dist-packages:/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/lib/python2.7/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build" \
     "/usr/bin/python" \
-    "/home/anakin/Workspace/Robot/robot_ws/src/turtlebot_create/create_driver/setup.py" \
-    build --build-base "/home/anakin/Workspace/Robot/robot_ws/build/turtlebot_create/create_driver" \
+    "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/turtlebot_create/create_driver/setup.py" \
+    build --build-base "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/turtlebot_create/create_driver" \
     install \
     $DESTDIR_ARG \
-    --install-layout=deb --prefix="/home/anakin/Workspace/Robot/robot_ws/install" --install-scripts="/home/anakin/Workspace/Robot/robot_ws/install/bin"
+    --install-layout=deb --prefix="/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install" --install-scripts="/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/bin"

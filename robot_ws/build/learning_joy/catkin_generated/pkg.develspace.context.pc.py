@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "joy;roscpp;turtlesim".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "learning_joy"
-PROJECT_SPACE_DIR = "/home/anakin/Workspace/Robot/robot_ws/devel"
+PROJECT_SPACE_DIR = "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel"
 PROJECT_VERSION = "0.0.0"

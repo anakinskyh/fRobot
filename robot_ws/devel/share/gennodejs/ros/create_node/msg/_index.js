@@ -1,18 +1,18 @@
 
 "use strict";
 
-let Drive = require('./Drive.js');
-let Turtle = require('./Turtle.js');
-let TurtlebotSensorState = require('./TurtlebotSensorState.js');
-let RawTurtlebotSensorState = require('./RawTurtlebotSensorState.js');
 let BatteryState = require('./BatteryState.js');
+let Drive = require('./Drive.js');
+let TurtlebotSensorState = require('./TurtlebotSensorState.js');
 let RoombaSensorState = require('./RoombaSensorState.js');
+let RawTurtlebotSensorState = require('./RawTurtlebotSensorState.js');
+let Turtle = require('./Turtle.js');
 
 module.exports = {
-  Drive: Drive,
-  Turtle: Turtle,
-  TurtlebotSensorState: TurtlebotSensorState,
-  RawTurtlebotSensorState: RawTurtlebotSensorState,
   BatteryState: BatteryState,
+  Drive: Drive,
+  TurtlebotSensorState: TurtlebotSensorState,
   RoombaSensorState: RoombaSensorState,
+  RawTurtlebotSensorState: RawTurtlebotSensorState,
+  Turtle: Turtle,
 };

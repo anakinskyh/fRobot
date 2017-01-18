@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_trigger_matcher.dir/test/test_trigger_matcher.cpp.o"
-  "/home/anakin/Workspace/Robot/robot_ws/devel/lib/timestamp_tools/test_trigger_matcher.pdb"
-  "/home/anakin/Workspace/Robot/robot_ws/devel/lib/timestamp_tools/test_trigger_matcher"
+  "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/timestamp_tools/test_trigger_matcher.pdb"
+  "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/timestamp_tools/test_trigger_matcher"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/anakin/Workspace/Robot/robot_ws/src/learning_joy/src/turtle_teleop_joy.cpp
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/learning_joy/src/turtle_teleop_joy.cpp
 ros/ros.h
 -
 geometry_msgs/Twist.h
@@ -136,6 +136,8 @@ cstdarg
 ros/macros.h
 -
 map
+-
+vector
 -
 log4cxx/level.h
 /opt/ros/kinetic/include/ros/log4cxx/level.h

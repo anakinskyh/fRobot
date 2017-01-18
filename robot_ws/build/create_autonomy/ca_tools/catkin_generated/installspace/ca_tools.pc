@@ -1,8 +1,0 @@
-prefix=/home/anakin/Workspace/Robot/robot_ws/install
-
-Name: ca_tools
-Description: Description of ca_tools
-Version: 1.2.0
-Cflags: 
-Libs: -L/home/anakin/Workspace/Robot/robot_ws/install/lib 
-Requires: joy_teleop

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/include/hokuyo_node/hokuyo.h
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/include/hokuyo_node/hokuyo.h
 stdexcept
 -
 termios.h
@@ -20,7 +20,7 @@ stdint.h
 limits
 -
 
-/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/src/hokuyo.cpp
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/src/hokuyo.cpp
 stdio.h
 -
 string.h
@@ -36,7 +36,7 @@ poll.h
 signal.h
 -
 hokuyo_node/hokuyo.h
-/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/src/hokuyo_node/hokuyo.h
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/src/hokuyo_node/hokuyo.h
 algorithm
 -
 time.h
@@ -44,7 +44,7 @@ time.h
 fcntl.h
 -
 ros/console.h
-/home/anakin/Workspace/Robot/robot_ws/src/hokuyo_node/src/ros/console.h
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node/src/ros/console.h
 sys/time.h
 -
 
@@ -62,6 +62,8 @@ cstdarg
 ros/macros.h
 -
 map
+-
+vector
 -
 log4cxx/level.h
 /opt/ros/kinetic/include/ros/log4cxx/level.h

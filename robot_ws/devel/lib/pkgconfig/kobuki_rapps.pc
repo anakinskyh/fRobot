@@ -1,8 +1,0 @@
-prefix=/home/anakin/Workspace/Robot/robot_ws/devel
-
-Name: kobuki_rapps
-Description: Description of kobuki_rapps
-Version: 0.7.2
-Cflags: 
-Libs: -L/home/anakin/Workspace/Robot/robot_ws/devel/lib 
-Requires: 

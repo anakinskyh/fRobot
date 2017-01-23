@@ -20,6 +20,14 @@ private:
   ros::Subscriber joy_sub_;
   int enable_key,turbo_key;
 
+  // use for cmd_vel_step
+  // parameter
+  double a_step = 0.01,l_step = 0.01;
+  bool use_step = false;
+
+  // memory
+  double c_a_cmd_vel=0.0,c_l_cmd_vel = 0.0;
+
   
 };
 
@@ -38,6 +46,11 @@ TeleopTurtle::TeleopTurtle():
   nh_.param("turbo_scale_linear",l_tur_scale,l_tur_scale);
   nh_.param("enable_key",enable_key,enable_key);
   nh_.param("turbo_key",turbo_key,turbo_key);
+
+  // make smooth cmd_vel # anakin
+  nh_.param("a_step",a_step,a_step);
+  nh_.param("l_step",l_step,l_step);
+  nh_.param("use_step",use_step,use_step);
 
   twist_pub_ = nh_.advertise<geometry_msgs::Twist>("cmd_vel", 1);
 
@@ -62,6 +75,26 @@ void TeleopTurtle::joyCallback(const sensor_msgs::Joy::ConstPtr& joy)
 
     twist.angular.z = a_scale*joy->axes[angular_];
     twist.linear.x = l_scale*joy->axes[linear_];
+
+    if(use_step){
+
+      std::printf("hi");
+
+      // angular
+      if(twist.angular.z > c_a_cmd_vel)
+        c_a_cmd_vel = std::min(twist.angular.z,c_a_cmd_vel + a_step);
+      else
+        c_a_cmd_vel = std::max(twist.angular.z,c_a_cmd_vel - a_step);
+
+      // linear
+      if(twist.linear.x > c_l_cmd_vel)
+        c_l_cmd_vel = std::min(twist.linear.x,c_l_cmd_vel + l_step);
+      else
+        c_l_cmd_vel = std::max(twist.linear.x,c_l_cmd_vel - l_step);
+
+      twist.angular.z = c_a_cmd_vel;
+      twist.linear.x = c_l_cmd_vel;
+    }
 
     twist_pub_.publish(twist);
   }

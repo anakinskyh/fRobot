@@ -32,7 +32,8 @@ TrajectoryPlannerROS:
   #false
   heading_scoring_timestep : 0.3
   #heading_scoring_timestep: 0.3
-  meter_scoring: false
+  meter_scoring: true #false
+  # true = strong against changes of costmap resolution
   pdist_scale: 0.6 #0.7
   #0.4
   gdist_scale: 0.8

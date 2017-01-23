@@ -1,4 +1,4 @@
-image: /home/anakin/Workspace/Robot/robot_ws/src/ros_dumbobot_nav/map/lab20_102.pgm
+image: /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/ros_dumbobot_nav/map/lab20_102.pgm
 resolution: 0.050000
 origin: [-50.000000, -50.000000, 0.000000]
 negate: 0

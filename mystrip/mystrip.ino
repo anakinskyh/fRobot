@@ -41,6 +41,8 @@ char* read_cmd(){
   memset(cmd,0,BUFFS);
   int ind=0;
   cmd[0]='\0';
+  
+  //input format
   while(true){
     if(Serial.available()>0){
       cmd[ind] = Serial.read();
@@ -80,37 +82,30 @@ void decode_and_set(char* cmd){
   //set_color();
   //char* token = (char *)malloc(20*sizeof(char));
   char* token;
-  int x,y,s;
+  int left,right,r,g,b,a;
       
-     token = strtok(cmd,sep);
-    
-    Serial.print(token);
-      Serial.print(":");
-    
-    x = atoi(token);
-    
-    token = strtok(NULL,sep);
-    
-    Serial.print(token);
-      Serial.print(":");
-    
-    y = atoi(token);
-    
-    token = strtok(NULL,sep);
-    
-        Serial.print(token);
-      Serial.print(";\n");
-    
-    s = atoi(token);
+      token = strtok(cmd,sep);
+      left = atoi(token);
+      
+      token = strtok(NULL,sep);
+      right = atoi(token);
+      
+      token = strtok(NULL,sep);
+      r = atoi(token);
+      
+      token = strtok(NULL,sep);
+      g = atoi(token);
+      
+      token = strtok(NULL,sep);
+      b = atoi(token);
+      
+      token = strtok(NULL,sep);
+      a = atoi(token);
+      
+      
  
      for(int i=0;i<40;i++)
        strip.setPixelColor(i, 80,0,0);
- 
-    for(int i=x;i<=y;i++){
-      if(s==0)
-        strip.setPixelColor(i, 80,0,0);
-      else 
-        strip.setPixelColor(i,0,80,0);
         
     }
     

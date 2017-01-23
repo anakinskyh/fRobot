@@ -70,19 +70,20 @@ char* read_cmd(){
   return cmd;
 }
 
-const char sep[4] = ", \n";
+const char sep[6] = "[], \n";
 void decode_and_set(char* cmd){
   
 //  set_color();
-  
+    
   Serial.print(cmd);
   Serial.print("\0\n");
       
   
+  
   //set_color();
   //char* token = (char *)malloc(20*sizeof(char));
   char* token;
-  int left,right,r,g,b,a;
+  int left,right,close_cmd,r,g,b,a;
       
       token = strtok(cmd,sep);
       left = atoi(token);
@@ -104,16 +105,11 @@ void decode_and_set(char* cmd){
       
       
  
-     for(int i=0;i<40;i++)
-       strip.setPixelColor(i, 80,0,0);
-        
-    }
-    
-    Serial.print("\0");
-
-  if(s==0)
-    deley = DELEY;
-  strip.show();
+     for(int i=left;i<=right;i++)
+       strip.setPixelColor(i,r,g,b,a);
+     
+     
+    strip.show();
   
 }
 
@@ -129,6 +125,7 @@ void setup(){
 void loop(){
   
   //set_color();
+  Serial.print("runloop");
   
   char* cmd_in = read_cmd();
   decode_and_set(cmd_in);

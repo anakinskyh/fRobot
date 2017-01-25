@@ -44,30 +44,79 @@ from geometry_msgs.msg import Twist
 class light():
     def callback(self,msg):
 
+        # debug
+        rospy.loginfo('state: %s',self.state)
+        # print 'state: %s'%(self.state)
+
         self.linear = msg.linear
         self.angular = msg.angular
 
-        
+        self.linear_is_zero = self.linear.x == 0
+        self.angular_is_zero = self.angular.z == 0
 
-        try:
-            self.ser.write(str(0)+","+str(40)+",52,152,219\n")
-            self.ser.write(str(i)+","+str(j)+",46,204,113\n")
-        except:
-            rospy.loginfo('try to connect port %s',self.dev)
-            try:
-                self.ser = serial.Serial(self.dev,baudrate=9600,timeout=10)
-            except :
-                rospy.loginfo('unable to connect to port %s',self.dev)
-                pass
+        if self.state == 'set stop':
+            return
+
+        #cmd = "[0,40,0,0,0,1]" #default is set zero
+        stop = False
+
+        if self.linear_is_zero and self.angular_is_zero:
+            if self.state == 'stop':
+                stop = True # set break
+            elif self.zero_cont >= self.max_zero_cont:
+                self.state = 'set stop'
+                stop = True # set break
+            else:
+                self.state = 'count'
+                self.zero_cont+=1
+                return
+        else:
+            self.zero_cont = 0
+            self.state = 'run'
+
+            if self.linear_is_zero:
+                if self.angular.z > 0:
+                    cmd = "[0,19,"
+                else:
+                    cmd = "[20,39,"
+
+            elif self.angular_is_zero:
+                cmd = '[15,24,'
+
+            else :
+                if self.angular.z > 0:
+                    cmd = "[5,24,"
+                else:
+                    cmd = "[15,34,"
+
+        # send signal
+        if self.state == 'set stop':
+            rospy.loginfo('[0,40,%s\n'%(self.break_color))
+            self.ser.write('[0,40,%s\n'%(self.break_color))
+            # rospy.sleep(1)
+            self.ser.write(self.blank)
+            
+            self.state = 'stop'
+            return
+
+        if stop == True:
+            self.ser.write(self.blank)
+            
+            self.state = 'stop'
+            return
+
+        if self.state == 'run':
+            self.ser.write(self.blank)
+            self.ser.write('%s%s\n'%(cmd,self.move_color))
 
     def listener(self):
-        # log
+        
         rospy.loginfo('start')
+        # print('start')
 
-        # start
-        rospy.init_node('light')
 
         # subscribe
+        rospy.loginfo('subscribe: %s',self.sub_topic)
         rospy.Subscriber(self.sub_topic, Twist, self.callback)
 
         # open serial port
@@ -85,9 +134,26 @@ class light():
         self.light_ratio = rospy.get_param('~light_ratio',0.0)
         self.rate = rospy.get_param('~light_rate',10.0)
         self.dev = rospy.get_param('~dev','/dev/ttyACM0')
+        self.max_zero_cont = rospy.get_param('~max_zero_cont',5)
+
+        self.blank = rospy.get_param('~blank','[0,40,0,0,0,1]\n')
+        self.move_color = rospy.get_param('~move_color','0,20,0,1]')
+        self.break_color = rospy.get_param('~break_color','20,0,0,1]')
+
 
     def init(self):
+
+        # start
+        rospy.init_node('light')
+
+        rospy.loginfo('start node')
+
         self.get_param()
+
+        # init for listener
+        self.zero_cont = 0
+        self.state = 'stop'
+
         self.listener()
 
 if __name__ == '__main__':

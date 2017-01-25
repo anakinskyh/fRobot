@@ -13,15 +13,19 @@ class light():
         self.dev = rospy.get_param('~dev', '/dev/arduino')
 
     def init(self):
+        rospy.init_node('simple_light')
+        rospy.loginfo('start simple_light')
         self.get_param()
         while not rospy.is_shutdown():
 
             try:
                 cmd = raw_input()
+                cmd = input()
 
                 if cmd == 'q':
                     break
 
+                # print 'cat'
                 cmd_atrs = cmd.split()
                 ser_cmd = ','.join(cmd_atrs)
                 ser_cmd = ser_cmd+'\n'

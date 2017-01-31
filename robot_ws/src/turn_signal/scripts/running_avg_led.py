@@ -34,7 +34,7 @@ class light():
             else:
                  self.ts_state = 'right'
         elif self.vel_z == 0: # go up
-            self.ts_state = 'up'
+            self.ts_state = 'top'
         else :
             if self.vel_z > 0:
                 self.ts_state = 'top left'

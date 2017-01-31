@@ -35,6 +35,7 @@ class turn_signal():
     
     def update_light(self):
         while not rospy.is_shutdown():
+            # rospy.loginfo('%s',self.ts_signal)
             if self.ts_signal == 'stop':
                 self.stop()
 
@@ -47,8 +48,18 @@ class turn_signal():
             elif self.ts_signal == 'top':
                 self.top()
 
+            elif self.ts_signal == 'top left':
+                self.top_left()
+
+            elif self.ts_signal == 'top right':
+                self.top_right()
+            
+            else:
+                rospy.loginfo('unmatch : %s',self.ts_signal)
+                self.top()
+
     def stop(self):
-        self.driver.set_range(left=0,right=40,color=[40,0,0,1])
+        self.driver.set_range(left=0,right=40,color=[20,0,0,1])
         self.driver.show()
 
         rospy.sleep(0.2)
@@ -56,7 +67,7 @@ class turn_signal():
         self.driver.set_range(left=0,right=40,color=[0,0,0,1])
         self.driver.show()
 
-        rospy.loginfo('enter stop')
+        # rospy.loginfo('enter stop')
 
         while self.ts_signal == 'stop' and not rospy.is_shutdown():
             self.rate.sleep()
@@ -67,30 +78,55 @@ class turn_signal():
         signal = st.left
 
         while self.ts_signal == 'left' and not rospy.is_shutdown():
-            self.rate.sleep()
-
-            self.driver.set_by_colorlist(signal)
-            self.driver.show()
-
-            signal = np.roll(signal,1,axis=0)
-
-    def right(self):
-        
-        signal = st.right
-
-        while self.ts_signal == 'right' and not rospy.is_shutdown():
-            self.rate.sleep()
 
             self.driver.set_by_colorlist(signal)
             self.driver.show()
 
             signal = np.roll(signal,-1,axis=0)
 
-    def top(self):
-        while self.ts_signal == 'top' and not rospy.is_shutdown():
             self.rate.sleep()
 
+    def right(self):
+        
+        signal = st.right
+
+        while self.ts_signal == 'right' and not rospy.is_shutdown():
+
+            self.driver.set_by_colorlist(signal)
+            self.driver.show()
+
+
+            self.rate.sleep()
+
+            signal = np.roll(signal,1,axis=0)
+
+    def top(self):
+        signal = st.top0
+        # rospy.loginfo('top')
+
+        while self.ts_signal == 'top' and not rospy.is_shutdown():
+
+            self.driver.set_by_colorlist(signal)
+            self.driver.show()
+            self.rate.sleep()
             
+    def top_left(self):
+
+        signal = st.top0
+
+        while self.ts_signal == 'top left' and not rospy.is_shutdown():
+            self.driver.set_by_colorlist(signal)
+            self.driver.show()
+            self.rate.sleep()
+
+    def top_right(self):
+
+        signal = st.top0
+
+        while self.ts_signal == 'top right' and not rospy.is_shutdown():
+            self.driver.set_by_colorlist(signal)
+            self.driver.show()
+            self.rate.sleep()
 
 
 

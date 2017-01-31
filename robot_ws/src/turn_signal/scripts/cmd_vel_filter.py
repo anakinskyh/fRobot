@@ -20,10 +20,15 @@ class cmd_filterer():
 
         rospy.sleep(self.delay)
 
-        if self.smoother:
+        # dont focus now this is will always be pass
+        if self.smoother and False:
             self.make_smoother(twist)
             twist.linear.x = self.vel_x
             twist.angular.z = self.vel_z
+
+        
+
+        #tell to some class
 
         self.pub.publish(twist)
 

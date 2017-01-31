@@ -5,7 +5,9 @@ import rospy
 import serial
 import time
 import numpy as np
+# from turn_signal.msg import TsState
 import pixel_driver
+import signal_template as st
 
 class turn_signal():
     def __init__(self,dev = '/dev/arduino',boudRate = 115200,size = 40):
@@ -15,27 +17,82 @@ class turn_signal():
 
         self.prevdir = 'center'
 
-        self.driver = pixel_driver(dev=dev,boudRate = boudRate,size =size)
+        self.ts_signal = 'stop'
+        self.vel_x = 0.0
+        self.vel_z = 0.0
 
-    def turn_right(self):
-        if self.prevdir != 'turn_right':
-            self.count = 0
-        else:
-            self.count += 1
+        self.driver = pixel_driver.pixel_driver(dev=dev,boudRate = boudRate,size =size)
 
-        _nump = np.array([0,0,0,0, 0,20,0,0, 0,30,0,0, 0,40,0,0, 0,60,0,0])
-        nump = np.array()
-        nump = concatenate((nump, _nump), axis=0)
-        nump = concatenate((nump, _nump), axis=0)
-        nump = concatenate((nump, _nump), axis=0)
-        nump = concatenate((nump, _nump), axis=0)
+    def change_state(self,ts_signal,vel_x,vel_z):
+        self.ts_signal = ts_signal
+        self.vel_x = vel_x
+        self.vel_z = vel_z
 
-        nump = concatenate((nump, _nump), axis=0)
-        nump = concatenate((nump, _nump), axis=0)
-        nump = concatenate((nump, _nump), axis=0)
-        nump = concatenate((nump, _nump), axis=0)
+        # rospy.loginfo('change : %s %f %f',self.ts_signal,self.vel_x,self.vel_z)
 
-        print nump
+    def set_rate(self,rate):
+        self.rate = rospy.Rate(rate)
+    
+    def update_light(self):
+        while not rospy.is_shutdown():
+            if self.ts_signal == 'stop':
+                self.stop()
+
+            elif self.ts_signal == 'left':
+                self.left()
+
+            elif self.ts_signal == 'right':
+                self.right()
+
+            elif self.ts_signal == 'top':
+                self.top()
+
+    def stop(self):
+        self.driver.set_range(left=0,right=40,color=[40,0,0,1])
+        self.driver.show()
+
+        rospy.sleep(0.2)
+
+        self.driver.set_range(left=0,right=40,color=[0,0,0,1])
+        self.driver.show()
+
+        rospy.loginfo('enter stop')
+
+        while self.ts_signal == 'stop' and not rospy.is_shutdown():
+            self.rate.sleep()
+            # rospy.loginfo('a')
+
+    def left(self):
+        
+        signal = st.left
+
+        while self.ts_signal == 'left' and not rospy.is_shutdown():
+            self.rate.sleep()
+
+            self.driver.set_by_colorlist(signal)
+            self.driver.show()
+
+            signal = np.roll(signal,1,axis=0)
+
+    def right(self):
+        
+        signal = st.right
+
+        while self.ts_signal == 'right' and not rospy.is_shutdown():
+            self.rate.sleep()
+
+            self.driver.set_by_colorlist(signal)
+            self.driver.show()
+
+            signal = np.roll(signal,-1,axis=0)
+
+    def top(self):
+        while self.ts_signal == 'top' and not rospy.is_shutdown():
+            self.rate.sleep()
+
+            
+
+
 
 if __name__ == '__main__':
     ts = turn_signal()

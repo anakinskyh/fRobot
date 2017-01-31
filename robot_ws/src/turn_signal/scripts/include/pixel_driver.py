@@ -23,10 +23,11 @@ class pixel_driver():
         msg_out = msg+'\n'
         # print 'write %s'%(msg_out)
         try:
+            # rospy.loginfo('%s %i',self.dev,self.boudRate)
             self.ser = serial.Serial(self.dev,self.boudRate,timeout=10)
             # self.ser.open()
             self.ser.write(msg_out)
-            time.sleep(0.01)
+            time.sleep(0.05)
         except :
             print 'unable to connect to port %s',self.dev
             rospy.loginfo('unable to connect to port %s',self.dev)

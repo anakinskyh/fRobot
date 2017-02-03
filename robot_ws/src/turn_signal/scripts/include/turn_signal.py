@@ -112,21 +112,30 @@ class turn_signal():
             
     def top_left(self):
 
-        signal = st.top0
+        signal = st.left
 
-        while self.ts_signal == 'top left' and not rospy.is_shutdown():
+        while self.ts_signal == 'left' and not rospy.is_shutdown():
+
             self.driver.set_by_colorlist(signal)
             self.driver.show()
+
+            signal = np.roll(signal,-1,axis=0)
+
             self.rate.sleep()
 
     def top_right(self):
 
-        signal = st.top0
+        signal = st.right
 
         while self.ts_signal == 'top right' and not rospy.is_shutdown():
+
             self.driver.set_by_colorlist(signal)
             self.driver.show()
+
+
             self.rate.sleep()
+
+            signal = np.roll(signal,1,axis=0)
 
 
 

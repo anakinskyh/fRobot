@@ -1,9 +1,9 @@
 local_costmap:
    global_frame: odom
    robot_base_frame: base_link
-   update_frequency: 8 #20 #8
+   update_frequency: 15 #8
    #10.0
-   publish_frequency: 10 #20 #10
+   publish_frequency: 20 #10
    #5.0 
    #2.0
    static_map: false
@@ -16,4 +16,4 @@ local_costmap:
    plugins:
     - {name: obstacle_layer,      type: "costmap_2d::VoxelLayer"}
     - {name: inflation_layer,     type: "costmap_2d::InflationLayer"}
-    - {name: human_layer,         type: "costmap_2d::VoxelLayer"}
+    # - {name: human_layer,         type: "costmap_2d::VoxelLayer"}

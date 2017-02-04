@@ -354,6 +354,12 @@ driver_common_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_w
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/kinetic/share/dynamic_reconfigure/cmake
 
+//Value Computed by CMake
+fbot_controller_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/fbot_controller
+
+//Value Computed by CMake
+fbot_controller_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/fbot_controller
+
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/kinetic/share/gencpp/cmake
 
@@ -443,6 +449,12 @@ robot_main_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/b
 robot_main_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/robot_main
 
 //Value Computed by CMake
+robot_sim_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/robot_sim
+
+//Value Computed by CMake
+robot_sim_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/robot_sim
+
+//Value Computed by CMake
 ros_dumbobot_nav_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/ros_dumbobot_nav
 
 //Value Computed by CMake
@@ -498,6 +510,12 @@ sim_fbot_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/bui
 
 //Value Computed by CMake
 sim_fbot_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/sim_fbot
+
+//Value Computed by CMake
+simple_create_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/simple_create
+
+//Value Computed by CMake
+simple_create_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/simple_create
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
@@ -704,7 +722,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=17
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

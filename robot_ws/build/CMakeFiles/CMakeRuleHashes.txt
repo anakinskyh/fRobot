@@ -12,6 +12,7 @@ b3c8cc02070681bc1d910870cb8a1476 /home/anakin/Workspace/2016/Robot/fRobot/robot_
 cca604b4a61a49b58e771f8e0b9ac7fd /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include/driver_base/ConfigValue.h
 82e8a969f1a2984638f600183b99226d /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include/driver_base/SensorLevels.h
 b9d70a42bf045bc7c6518a329734f1ab /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include/hokuyo_node/HokuyoConfig.h
+b781d74e879b3614d72211fe864a75b6 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include/turn_signal/TsState.h
 6df8453f42a3875fb8a9f8ef8ae647ff /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/python2.7/dist-packages/create_node/msg/_BatteryState.py
 f1e660d9eedbdef36e1da5420cb8af48 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/python2.7/dist-packages/create_node/msg/_Drive.py
 af3edea7789d14665a9716615a67bf0d /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/python2.7/dist-packages/create_node/msg/_RawTurtlebotSensorState.py
@@ -26,6 +27,8 @@ df7a0d396df5d785e9846e010cee34ab /home/anakin/Workspace/2016/Robot/fRobot/robot_
 ffe3ccece132c233e8416fe909eddb7c /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/python2.7/dist-packages/driver_base/msg/_ConfigValue.py
 809b2b84b8bd577868f74e62d694d171 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/python2.7/dist-packages/driver_base/msg/_SensorLevels.py
 5e9f91e2f02fae68162f145c75e1caf9 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/python2.7/dist-packages/driver_base/msg/__init__.py
+d6c219518b4bb53c251e8e4548dc4f91 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/python2.7/dist-packages/turn_signal/msg/_TsState.py
+2e8b56b2b76549f5486cba9b934584a1 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/python2.7/dist-packages/turn_signal/msg/__init__.py
 4261be256c507752bf8ce4f48344a2a1 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/common-lisp/ros/create_node/msg/BatteryState.lisp
 922ae8c49a390116f44f934f01223ed9 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/common-lisp/ros/create_node/msg/Drive.lisp
 0144d11acebabe4e55f14b7b4572d57c /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/common-lisp/ros/create_node/msg/RawTurtlebotSensorState.lisp
@@ -37,6 +40,7 @@ e89f2fba4f6cc52e51c50b798513268d /home/anakin/Workspace/2016/Robot/fRobot/robot_
 fcc2b219ac9fa998baba83de79b4eaa0 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/common-lisp/ros/driver_base/msg/ConfigString.lisp
 8dc296fdc23cd6968ae56c2a4f70bd1e /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/common-lisp/ros/driver_base/msg/ConfigValue.lisp
 a67d13e43514a96bd7154503f3b8d3af /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/common-lisp/ros/driver_base/msg/SensorLevels.lisp
+19386d0ef9a2a73c27f8c224943d02f3 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/common-lisp/ros/turn_signal/msg/TsState.lisp
 e0e9dcb6977d227a80fd94fe40cfc9e5 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/gennodejs/ros/create_node/msg/BatteryState.js
 6918a0f82af2e140f77748d96491b9f9 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/gennodejs/ros/create_node/msg/Drive.js
 5df7139610330c2dd1fdd78d763cc94e /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/gennodejs/ros/create_node/msg/RawTurtlebotSensorState.js
@@ -48,6 +52,7 @@ e0e9dcb6977d227a80fd94fe40cfc9e5 /home/anakin/Workspace/2016/Robot/fRobot/robot_
 40ad058f7bfc64985dc8e5e80c465a9f /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/gennodejs/ros/driver_base/msg/ConfigString.js
 af968d84124b764fe603d0d954f89935 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/gennodejs/ros/driver_base/msg/ConfigValue.js
 f7b2c50e544e28aec88a6c2843060922 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/gennodejs/ros/driver_base/msg/SensorLevels.js
+ef4496f6e9cefc29eacc9c62254c78ed /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/gennodejs/ros/turn_signal/msg/TsState.js
 949e0d1f8328996c8f7c945873f28040 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/roseus/ros/create_node/manifest.l
 f68ba18ef848519927020976896d5b7d /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/roseus/ros/create_node/msg/BatteryState.l
 aa6e1f81c86e12cee7c7747a40450923 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/roseus/ros/create_node/msg/Drive.l
@@ -61,6 +66,8 @@ eb4a4844eabccef5b69c62584ce004bc /home/anakin/Workspace/2016/Robot/fRobot/robot_
 ec7010aa2d855d21bdbd37036a422350 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/roseus/ros/driver_base/msg/ConfigString.l
 e24018a657b2b269582061c3b80fe028 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/roseus/ros/driver_base/msg/ConfigValue.l
 e35cb17a2637298c78b414d7553afca4 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/roseus/ros/driver_base/msg/SensorLevels.l
+d5f3a7e945a911872e62e0eee5ef9b98 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/roseus/ros/turn_signal/manifest.l
+14b49d2dda9431ce448946b31fad297c /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/roseus/ros/turn_signal/msg/TsState.l
 6e18ffb081b6b027643d4eddbb958ccb CMakeFiles/clean_test_results
 50c293f2850835613608bf0d23cf3047 driver_common/driver_base/CMakeFiles/_driver_base_generate_messages_check_deps_ConfigString
 fa5eff1f973b83b1096819c5db9590cf driver_common/driver_base/CMakeFiles/_driver_base_generate_messages_check_deps_ConfigValue
@@ -74,6 +81,12 @@ fa5eff1f973b83b1096819c5db9590cf driver_common/driver_base/CMakeFiles/_driver_ba
 b97ba37dcfa28081a695201d3bf3e639 driver_common/timestamp_tools/CMakeFiles/clean_test_results_timestamp_tools
 7ec15b36ae015d63a585d702ea22ed3e driver_common/timestamp_tools/CMakeFiles/run_tests_timestamp_tools_gtest_test_trigger_matcher
 d5d59f484ce61955300d4daf75497de4 hokuyo_node/CMakeFiles/hokuyo_node_gencfg
+6541da75f157a77b36e82d9e2908f57b turn_signal/CMakeFiles/_turn_signal_generate_messages_check_deps_TsState
+13af93bd904de462e08b51e1528dfbd8 turn_signal/CMakeFiles/turn_signal_generate_messages_cpp
+13af93bd904de462e08b51e1528dfbd8 turn_signal/CMakeFiles/turn_signal_generate_messages_eus
+13af93bd904de462e08b51e1528dfbd8 turn_signal/CMakeFiles/turn_signal_generate_messages_lisp
+13af93bd904de462e08b51e1528dfbd8 turn_signal/CMakeFiles/turn_signal_generate_messages_nodejs
+13af93bd904de462e08b51e1528dfbd8 turn_signal/CMakeFiles/turn_signal_generate_messages_py
 e699320819d45521b3e5f03f5de58f3f turtlebot_create/create_node/CMakeFiles/_create_node_generate_messages_check_deps_BatteryState
 108893c074c9faf7a8f2f96f4c81d792 turtlebot_create/create_node/CMakeFiles/_create_node_generate_messages_check_deps_Drive
 4485d975fdfc5013c79e9b33427560a2 turtlebot_create/create_node/CMakeFiles/_create_node_generate_messages_check_deps_RawTurtlebotSensorState

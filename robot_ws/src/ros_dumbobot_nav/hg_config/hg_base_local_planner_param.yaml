@@ -1,18 +1,18 @@
 TrajectoryPlannerROS:
   acc_lim_x: 0.1 
   # 1 m/s^2
-  acc_lim_theta: 1.5 #2.1
+  acc_lim_theta: 1.5 #0.05 # \2.1
   #1.5 #2
 
   
-  max_vel_x: 0.12 #0.14 #0.08 #0.15
+  max_vel_x: 0.12 
   # m/s
-  min_vel_x: -0.12 #-0.14 #0.05
+  min_vel_x: 0.1 
   # m/s
    
-  max_vel_theta: 0.8 #1.5 #2.0 #1.0 #1.5 
+  max_vel_theta: 0.8 # \1.5 
   # rad/s
-  min_vel_theta: -0.8 #-1.5 #0.5 #1.0 #-1.5 #0.7 
+  min_vel_theta: -0.8 # \-1.5 #0.7 
   # rad/s
   min_in_place_vel_theta: 0.7
   # rad/s
@@ -42,12 +42,12 @@ TrajectoryPlannerROS:
 
   ###
   # Goal Tolerance Parameters
-  yaw_goal_tolerance: 0.3  # 0.15 rad
+  yaw_goal_tolerance: 0.5 # norm 0.3  # 0.15 rad
   xy_goal_tolerance: 0.3  #0.1 m
   # latch_xy_goal_tolerance: false
   
   #The amount of time to forward-simulate trajectories in seconds  
-  sim_time: 1.0 #3.0
+  sim_time: 3.0
   #1
   #The step size, in meters, to take between points on a given trajectory 
   sim_granularity: 0.025

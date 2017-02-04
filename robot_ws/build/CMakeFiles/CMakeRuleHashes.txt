@@ -11,6 +11,7 @@ c157fd2bc77516d5ae1258212647e5d5 /home/anakin/Workspace/2016/Robot/fRobot/robot_
 b3c8cc02070681bc1d910870cb8a1476 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include/driver_base/ConfigString.h
 cca604b4a61a49b58e771f8e0b9ac7fd /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include/driver_base/ConfigValue.h
 82e8a969f1a2984638f600183b99226d /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include/driver_base/SensorLevels.h
+93b5a3fb1eef3ba296dce7a3ba6abb35 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include/freenect_camera/FreenectConfig.h
 b9d70a42bf045bc7c6518a329734f1ab /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include/hokuyo_node/HokuyoConfig.h
 b781d74e879b3614d72211fe864a75b6 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include/turn_signal/TsState.h
 6df8453f42a3875fb8a9f8ef8ae647ff /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib/python2.7/dist-packages/create_node/msg/_BatteryState.py
@@ -80,6 +81,7 @@ fa5eff1f973b83b1096819c5db9590cf driver_common/driver_base/CMakeFiles/_driver_ba
 7ec15b36ae015d63a585d702ea22ed3e driver_common/timestamp_tools/CMakeFiles/_run_tests_timestamp_tools_gtest_test_trigger_matcher
 b97ba37dcfa28081a695201d3bf3e639 driver_common/timestamp_tools/CMakeFiles/clean_test_results_timestamp_tools
 7ec15b36ae015d63a585d702ea22ed3e driver_common/timestamp_tools/CMakeFiles/run_tests_timestamp_tools_gtest_test_trigger_matcher
+bdf7a554de4972b723a4f37849407960 freenect_stack/freenect_camera/CMakeFiles/freenect_camera_gencfg
 d5d59f484ce61955300d4daf75497de4 hokuyo_node/CMakeFiles/hokuyo_node_gencfg
 6541da75f157a77b36e82d9e2908f57b turn_signal/CMakeFiles/_turn_signal_generate_messages_check_deps_TsState
 13af93bd904de462e08b51e1528dfbd8 turn_signal/CMakeFiles/turn_signal_generate_messages_cpp

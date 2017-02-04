@@ -253,6 +253,9 @@ GTEST_MAIN_LIBRARY:FILEPATH=GTEST_MAIN_LIBRARY-NOTFOUND
 GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
+LIBFREENECT_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/libfreenect.so
+
+//Path to a library.
 LOG4CXX_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/liblog4cxx.so
 
 //lsb_release executable was found
@@ -263,6 +266,9 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
@@ -303,8 +309,20 @@ actionlib_DIR:PATH=/opt/ros/kinetic/share/actionlib/cmake
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/kinetic/share/actionlib_msgs/cmake
 
+//The directory containing a CMake configuration file for bond.
+bond_DIR:PATH=/opt/ros/kinetic/share/bond/cmake
+
+//The directory containing a CMake configuration file for bondcpp.
+bondcpp_DIR:PATH=/opt/ros/kinetic/share/bondcpp/cmake
+
+//The directory containing a CMake configuration file for camera_info_manager.
+camera_info_manager_DIR:PATH=/opt/ros/kinetic/share/camera_info_manager/cmake
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
+
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/kinetic/share/class_loader/cmake
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
@@ -360,6 +378,27 @@ fbot_controller_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot
 //Value Computed by CMake
 fbot_controller_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/fbot_controller
 
+//Value Computed by CMake
+freenect_camera_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/freenect_stack/freenect_camera
+
+//Value Computed by CMake
+freenect_camera_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/freenect_stack/freenect_camera
+
+//Value Computed by CMake
+freenect_launch_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/freenect_stack/freenect_launch
+
+//Value Computed by CMake
+freenect_launch_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/freenect_stack/freenect_launch
+
+//Dependencies for the target
+freenect_nodelet_LIB_DEPENDS:STATIC=general;/opt/ros/kinetic/lib/libcamera_info_manager.so;general;/opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/kinetic/lib/libimage_transport.so;general;/opt/ros/kinetic/lib/libmessage_filters.so;general;/opt/ros/kinetic/lib/libnodeletlib.so;general;/opt/ros/kinetic/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/kinetic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/opt/ros/kinetic/lib/libxmlrpcpp.so;general;/opt/ros/kinetic/lib/libroscpp_serialization.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/kinetic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/kinetic/lib/librosconsole.so;general;/opt/ros/kinetic/lib/librosconsole_log4cxx.so;general;/opt/ros/kinetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/kinetic/lib/librostime.so;general;/opt/ros/kinetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;/opt/ros/kinetic/lib/libroslib.so;general;/opt/ros/kinetic/lib/libfreenect.so;general;log4cxx;
+
+//Value Computed by CMake
+freenect_stack_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/freenect_stack/freenect_stack
+
+//Value Computed by CMake
+freenect_stack_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/freenect_stack/freenect_stack
+
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/kinetic/share/gencpp/cmake
 
@@ -412,6 +451,9 @@ hokuyo_node_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/
 //Value Computed by CMake
 hokuyo_node_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/hokuyo_node
 
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=/opt/ros/kinetic/share/image_transport/cmake
+
 //The directory containing a CMake configuration file for joy.
 joy_DIR:PATH=/opt/ros/kinetic/share/joy/cmake
 
@@ -441,6 +483,12 @@ move_base_DIR:PATH=/opt/ros/kinetic/share/move_base/cmake
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/kinetic/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for nodelet.
+nodelet_DIR:PATH=/opt/ros/kinetic/share/nodelet/cmake
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/kinetic/share/pluginlib/cmake
 
 //Value Computed by CMake
 robot_main_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/robot_main
@@ -516,6 +564,9 @@ simple_create_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_w
 
 //Value Computed by CMake
 simple_create_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/simple_create
+
+//The directory containing a CMake configuration file for smclib.
+smclib_DIR:PATH=/opt/ros/kinetic/share/smclib/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
@@ -722,7 +773,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=17
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -761,6 +812,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.12()]
 //Details about finding Threads
@@ -780,6 +833,76 @@ GTEST_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GTEST_MAIN_LIBRARY_DEBUG
 GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+LIBFREENECT_CFLAGS:INTERNAL=-I/opt/ros/kinetic/include/libfreenect;-I/usr/include/libusb-1.0
+LIBFREENECT_CFLAGS_I:INTERNAL=
+LIBFREENECT_CFLAGS_OTHER:INTERNAL=
+LIBFREENECT_FOUND:INTERNAL=1
+LIBFREENECT_INCLUDEDIR:INTERNAL=/opt/ros/kinetic/include/libfreenect
+LIBFREENECT_INCLUDE_DIRS:INTERNAL=/opt/ros/kinetic/include/libfreenect;/usr/include/libusb-1.0
+LIBFREENECT_LDFLAGS:INTERNAL=-L/opt/ros/kinetic/lib;-lfreenect
+LIBFREENECT_LDFLAGS_OTHER:INTERNAL=
+LIBFREENECT_LIBDIR:INTERNAL=/opt/ros/kinetic/lib
+LIBFREENECT_LIBRARIES:INTERNAL=freenect
+LIBFREENECT_LIBRARY_DIRS:INTERNAL=/opt/ros/kinetic/lib
+LIBFREENECT_LIBS:INTERNAL=
+LIBFREENECT_LIBS_L:INTERNAL=
+LIBFREENECT_LIBS_OTHER:INTERNAL=
+LIBFREENECT_LIBS_PATHS:INTERNAL=
+LIBFREENECT_PREFIX:INTERNAL=/opt/ros/kinetic
+LIBFREENECT_STATIC_CFLAGS:INTERNAL=-I/opt/ros/kinetic/include/libfreenect;-I/usr/include/libusb-1.0
+LIBFREENECT_STATIC_CFLAGS_I:INTERNAL=
+LIBFREENECT_STATIC_CFLAGS_OTHER:INTERNAL=
+LIBFREENECT_STATIC_INCLUDE_DIRS:INTERNAL=/opt/ros/kinetic/include/libfreenect;/usr/include/libusb-1.0
+LIBFREENECT_STATIC_LDFLAGS:INTERNAL=-L/opt/ros/kinetic/lib;-lfreenect;-lusb-1.0;-ludev;-pthread
+LIBFREENECT_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+LIBFREENECT_STATIC_LIBDIR:INTERNAL=
+LIBFREENECT_STATIC_LIBRARIES:INTERNAL=freenect;usb-1.0;udev
+LIBFREENECT_STATIC_LIBRARY_DIRS:INTERNAL=/opt/ros/kinetic/lib
+LIBFREENECT_STATIC_LIBS:INTERNAL=
+LIBFREENECT_STATIC_LIBS_L:INTERNAL=
+LIBFREENECT_STATIC_LIBS_OTHER:INTERNAL=
+LIBFREENECT_STATIC_LIBS_PATHS:INTERNAL=
+LIBFREENECT_VERSION:INTERNAL=0.5
+LIBFREENECT_libfreenect_INCLUDEDIR:INTERNAL=
+LIBFREENECT_libfreenect_LIBDIR:INTERNAL=
+LIBFREENECT_libfreenect_PREFIX:INTERNAL=
+LIBFREENECT_libfreenect_VERSION:INTERNAL=
+LOG4CXX_CFLAGS:INTERNAL=
+LOG4CXX_CFLAGS_I:INTERNAL=
+LOG4CXX_CFLAGS_OTHER:INTERNAL=
+LOG4CXX_FOUND:INTERNAL=1
+LOG4CXX_INCLUDEDIR:INTERNAL=/usr/include
+LOG4CXX_INCLUDE_DIRS:INTERNAL=
+LOG4CXX_LDFLAGS:INTERNAL=-llog4cxx
+LOG4CXX_LDFLAGS_OTHER:INTERNAL=
+LOG4CXX_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+LOG4CXX_LIBRARIES:INTERNAL=log4cxx
+LOG4CXX_LIBRARY_DIRS:INTERNAL=
+LOG4CXX_LIBS:INTERNAL=
+LOG4CXX_LIBS_L:INTERNAL=
+LOG4CXX_LIBS_OTHER:INTERNAL=
+LOG4CXX_LIBS_PATHS:INTERNAL=
+LOG4CXX_PREFIX:INTERNAL=/usr
+LOG4CXX_STATIC_CFLAGS:INTERNAL=
+LOG4CXX_STATIC_CFLAGS_I:INTERNAL=
+LOG4CXX_STATIC_CFLAGS_OTHER:INTERNAL=
+LOG4CXX_STATIC_INCLUDE_DIRS:INTERNAL=
+LOG4CXX_STATIC_LDFLAGS:INTERNAL=-llog4cxx
+LOG4CXX_STATIC_LDFLAGS_OTHER:INTERNAL=
+LOG4CXX_STATIC_LIBDIR:INTERNAL=
+LOG4CXX_STATIC_LIBRARIES:INTERNAL=log4cxx
+LOG4CXX_STATIC_LIBRARY_DIRS:INTERNAL=
+LOG4CXX_STATIC_LIBS:INTERNAL=
+LOG4CXX_STATIC_LIBS_L:INTERNAL=
+LOG4CXX_STATIC_LIBS_OTHER:INTERNAL=
+LOG4CXX_STATIC_LIBS_PATHS:INTERNAL=
+LOG4CXX_VERSION:INTERNAL=0.10.0
+LOG4CXX_liblog4cxx_INCLUDEDIR:INTERNAL=
+LOG4CXX_liblog4cxx_LIBDIR:INTERNAL=
+LOG4CXX_liblog4cxx_PREFIX:INTERNAL=
+LOG4CXX_liblog4cxx_VERSION:INTERNAL=
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //This needs to be in PYTHONPATH when 'setup.py install' is called.
@@ -798,4 +921,7 @@ _Boost_LIBRARY_DIR_RELEASE_LAST:INTERNAL=/usr/lib/x86_64-linux-gnu
 _Boost_NAMESPACE_LAST:INTERNAL=boost
 //Last used Boost_USE_MULTITHREADED value.
 _Boost_USE_MULTITHREADED_LAST:INTERNAL=TRUE
+__pkg_config_checked_LIBFREENECT:INTERNAL=1
+__pkg_config_checked_LOG4CXX:INTERNAL=1
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 

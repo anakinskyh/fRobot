@@ -5,4 +5,4 @@ PROJECT_CATKIN_DEPENDS = "people_msgs;geometry_msgs;actionlib_msgs;stereo_msgs;s
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "face_detector"
 PROJECT_SPACE_DIR = "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install"
-PROJECT_VERSION = "1.0.10"
+PROJECT_VERSION = "1.0.11"

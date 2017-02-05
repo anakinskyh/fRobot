@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "people_msgs")
-set(people_msgs_VERSION "1.0.10")
+set(people_msgs_VERSION "1.0.11")
 set(people_msgs_MAINTAINER "Dan Lazewatsky <dan@lazewatsky.com>")
 set(people_msgs_PACKAGE_FORMAT "1")
 set(people_msgs_BUILD_DEPENDS "std_msgs" "geometry_msgs" "message_generation")

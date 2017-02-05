@@ -2,7 +2,7 @@ prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install
 
 Name: face_detector
 Description: Description of face_detector
-Version: 1.0.10
+Version: 1.0.11
 Cflags: -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/include
 Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/lib 
 Requires: people_msgs geometry_msgs actionlib_msgs stereo_msgs sensor_msgs std_msgs message_runtime

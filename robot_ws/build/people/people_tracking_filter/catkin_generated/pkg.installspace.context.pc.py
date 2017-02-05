@@ -5,4 +5,4 @@ PROJECT_CATKIN_DEPENDS = "sensor_msgs;std_msgs;geometry_msgs;people_msgs".replac
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lpeople_tracking_filter".split(';') if "-lpeople_tracking_filter" != "" else []
 PROJECT_NAME = "people_tracking_filter"
 PROJECT_SPACE_DIR = "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install"
-PROJECT_VERSION = "1.0.10"
+PROJECT_VERSION = "1.0.11"

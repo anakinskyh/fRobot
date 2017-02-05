@@ -1,6 +1,6 @@
 <package>
   <name>face_detector</name>
-  <version>1.0.11</version>
+  <version>1.0.10</version>
   <description>Face detection in images.</description>
   <maintainer email="dan@lazewatsky.com">Dan Lazewatsky</maintainer>
 
@@ -69,6 +69,7 @@
   <!-- <test_depend>image_geometry</test_depend> -->
   <!-- <test_depend>actionlib_msgs</test_depend> -->
   <!-- <test_depend>actionlib</test_depend> -->
+  <test_depend>stereo_image_proc</test_depend>
 
 <!-- <export>
     <cpp cflags="-I${prefix}/msg/cpp -I${prefix}/srv/cpp"/>

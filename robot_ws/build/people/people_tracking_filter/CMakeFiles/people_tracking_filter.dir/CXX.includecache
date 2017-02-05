@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include/people_msgs/PositionMeasurement.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
+geometry_msgs/Point.h
+-
+
 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/people/people_tracking_filter/include/people_tracking_filter/detector_particle.h
 tracker.h
 /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/people/people_tracking_filter/include/people_tracking_filter/tracker.h

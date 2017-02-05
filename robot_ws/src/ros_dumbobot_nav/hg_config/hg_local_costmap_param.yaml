@@ -17,3 +17,4 @@ local_costmap:
     - {name: obstacle_layer,      type: "costmap_2d::VoxelLayer"}
     - {name: inflation_layer,     type: "costmap_2d::InflationLayer"}
     # - {name: human_layer,         type: "costmap_2d::VoxelLayer"}
+    - {name: human_layer,   type: "social_navigation_layers::ProxemicLayer"}

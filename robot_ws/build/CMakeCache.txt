@@ -803,6 +803,9 @@ driver_common_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_w
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/kinetic/share/dynamic_reconfigure/cmake
 
+//The directory containing a CMake configuration file for easy_markers.
+easy_markers_DIR:PATH=/opt/ros/kinetic/share/easy_markers/cmake
+
 //The directory containing a CMake configuration file for eigen_conversions.
 eigen_conversions_DIR:PATH=/opt/ros/kinetic/share/eigen_conversions/cmake
 
@@ -909,6 +912,9 @@ image_transport_DIR:PATH=/opt/ros/kinetic/share/image_transport/cmake
 //The directory containing a CMake configuration file for joy.
 joy_DIR:PATH=/opt/ros/kinetic/share/joy/cmake
 
+//The directory containing a CMake configuration file for kalman_filter.
+kalman_filter_DIR:PATH=/opt/ros/kinetic/share/kalman_filter/cmake
+
 //The directory containing a CMake configuration file for laser_geometry.
 laser_geometry_DIR:PATH=/opt/ros/kinetic/share/laser_geometry/cmake
 
@@ -917,6 +923,12 @@ learning_joy_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws
 
 //Value Computed by CMake
 learning_joy_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/learning_joy
+
+//Value Computed by CMake
+leg_detector_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/people/leg_detector
+
+//Value Computed by CMake
+leg_detector_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/people/leg_detector
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
@@ -984,11 +996,20 @@ people_msgs_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/
 //Value Computed by CMake
 people_tracking_filter_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/people/people_tracking_filter
 
+//The directory containing a CMake configuration file for people_tracking_filter.
+people_tracking_filter_DIR:PATH=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/share/people_tracking_filter/cmake
+
 //Dependencies for the target
 people_tracking_filter_LIB_DEPENDS:STATIC=general;/opt/ros/kinetic/lib/libtf.so;general;/opt/ros/kinetic/lib/libtf2_ros.so;general;/opt/ros/kinetic/lib/libactionlib.so;general;/opt/ros/kinetic/lib/libtf2.so;general;/opt/ros/kinetic/lib/libmessage_filters.so;general;/opt/ros/kinetic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/kinetic/lib/libxmlrpcpp.so;general;/opt/ros/kinetic/lib/librosconsole.so;general;/opt/ros/kinetic/lib/librosconsole_log4cxx.so;general;/opt/ros/kinetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/kinetic/lib/libroscpp_serialization.so;general;/opt/ros/kinetic/lib/librostime.so;general;/opt/ros/kinetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;orocos-bfl;
 
 //Value Computed by CMake
 people_tracking_filter_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/people/people_tracking_filter
+
+//Value Computed by CMake
+people_velocity_tracker_BINARY_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/people/people_velocity_tracker
+
+//Value Computed by CMake
+people_velocity_tracker_SOURCE_DIR:STATIC=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/people/people_velocity_tracker
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/kinetic/share/pluginlib/cmake
@@ -1212,6 +1233,30 @@ BFL_orocos-bfl_INCLUDEDIR:INTERNAL=
 BFL_orocos-bfl_LIBDIR:INTERNAL=
 BFL_orocos-bfl_PREFIX:INTERNAL=
 BFL_orocos-bfl_VERSION:INTERNAL=
+BULLET_CFLAGS:INTERNAL=
+BULLET_CFLAGS_I:INTERNAL=
+BULLET_CFLAGS_OTHER:INTERNAL=
+BULLET_FOUND:INTERNAL=
+BULLET_INCLUDEDIR:INTERNAL=
+BULLET_LIBDIR:INTERNAL=
+BULLET_LIBS:INTERNAL=
+BULLET_LIBS_L:INTERNAL=
+BULLET_LIBS_OTHER:INTERNAL=
+BULLET_LIBS_PATHS:INTERNAL=
+BULLET_PREFIX:INTERNAL=
+BULLET_STATIC_CFLAGS:INTERNAL=
+BULLET_STATIC_CFLAGS_I:INTERNAL=
+BULLET_STATIC_CFLAGS_OTHER:INTERNAL=
+BULLET_STATIC_LIBDIR:INTERNAL=
+BULLET_STATIC_LIBS:INTERNAL=
+BULLET_STATIC_LIBS_L:INTERNAL=
+BULLET_STATIC_LIBS_OTHER:INTERNAL=
+BULLET_STATIC_LIBS_PATHS:INTERNAL=
+BULLET_VERSION:INTERNAL=
+BULLET_bullet_INCLUDEDIR:INTERNAL=
+BULLET_bullet_LIBDIR:INTERNAL=
+BULLET_bullet_PREFIX:INTERNAL=
+BULLET_bullet_VERSION:INTERNAL=
 //ADVANCED property for variable: Boost_ATOMIC_LIBRARY_DEBUG
 Boost_ATOMIC_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_ATOMIC_LIBRARY_RELEASE
@@ -1357,7 +1402,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=24
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=26
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1806,6 +1851,7 @@ _Boost_NAMESPACE_LAST:INTERNAL=boost
 //Last used Boost_USE_MULTITHREADED value.
 _Boost_USE_MULTITHREADED_LAST:INTERNAL=TRUE
 __pkg_config_checked_BFL:INTERNAL=1
+__pkg_config_checked_BULLET:INTERNAL=1
 __pkg_config_checked_LIBFREENECT:INTERNAL=1
 __pkg_config_checked_LOG4CXX:INTERNAL=1
 __pkg_config_checked_PC_EIGEN:INTERNAL=1

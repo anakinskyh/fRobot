@@ -2,7 +2,7 @@ prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel
 
 Name: people_msgs
 Description: Description of people_msgs
-Version: 1.0.11
+Version: 1.0.10
 Cflags: -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include
 Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib 
 Requires: message_runtime geometry_msgs std_msgs

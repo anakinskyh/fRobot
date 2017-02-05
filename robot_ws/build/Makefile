@@ -2870,6 +2870,97 @@ people_tracker/fast:
 .PHONY : people_tracker/fast
 
 #=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_nodejs
+
+# Build rule for target.
+visualization_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_nodejs
+.PHONY : visualization_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+visualization_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+.PHONY : visualization_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_eus
+
+# Build rule for target.
+visualization_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_eus
+.PHONY : visualization_msgs_generate_messages_eus
+
+# fast build rule for target.
+visualization_msgs_generate_messages_eus/fast:
+	$(MAKE) -f people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+.PHONY : visualization_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named leg_detector_gencfg
+
+# Build rule for target.
+leg_detector_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 leg_detector_gencfg
+.PHONY : leg_detector_gencfg
+
+# fast build rule for target.
+leg_detector_gencfg/fast:
+	$(MAKE) -f people/leg_detector/CMakeFiles/leg_detector_gencfg.dir/build.make people/leg_detector/CMakeFiles/leg_detector_gencfg.dir/build
+.PHONY : leg_detector_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_lisp
+
+# Build rule for target.
+visualization_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_lisp
+.PHONY : visualization_msgs_generate_messages_lisp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+.PHONY : visualization_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_cpp
+
+# Build rule for target.
+visualization_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_cpp
+.PHONY : visualization_msgs_generate_messages_cpp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+.PHONY : visualization_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_py
+
+# Build rule for target.
+visualization_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_py
+.PHONY : visualization_msgs_generate_messages_py
+
+# fast build rule for target.
+visualization_msgs_generate_messages_py/fast:
+	$(MAKE) -f people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+.PHONY : visualization_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named leg_detector
+
+# Build rule for target.
+leg_detector: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 leg_detector
+.PHONY : leg_detector
+
+# fast build rule for target.
+leg_detector/fast:
+	$(MAKE) -f people/leg_detector/CMakeFiles/leg_detector.dir/build.make people/leg_detector/CMakeFiles/leg_detector.dir/build
+.PHONY : leg_detector/fast
+
+#=============================================================================
 # Target rules for targets named turn_signal_genpy
 
 # Build rule for target.
@@ -3337,6 +3428,13 @@ help:
 	@echo "... run_tests_face_detector_rostest_test_rgbd_true_rtest.xml"
 	@echo "... people_tracking_filter"
 	@echo "... people_tracker"
+	@echo "... visualization_msgs_generate_messages_nodejs"
+	@echo "... visualization_msgs_generate_messages_eus"
+	@echo "... leg_detector_gencfg"
+	@echo "... visualization_msgs_generate_messages_lisp"
+	@echo "... visualization_msgs_generate_messages_cpp"
+	@echo "... visualization_msgs_generate_messages_py"
+	@echo "... leg_detector"
 	@echo "... turn_signal_genpy"
 	@echo "... turn_signal_generate_messages_py"
 	@echo "... turn_signal_gencpp"

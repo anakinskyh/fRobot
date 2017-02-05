@@ -1,0 +1,2 @@
+set(people_msgs_MESSAGE_FILES "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/people/people_msgs/msg/People.msg;/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/people/people_msgs/msg/Person.msg;/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/people/people_msgs/msg/PersonStamped.msg;/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/people/people_msgs/msg/PositionMeasurementArray.msg;/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/people/people_msgs/msg/PositionMeasurement.msg")
+set(people_msgs_SERVICE_FILES "")

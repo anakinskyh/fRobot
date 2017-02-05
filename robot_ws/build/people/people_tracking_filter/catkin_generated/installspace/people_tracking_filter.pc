@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install
+
+Name: people_tracking_filter
+Description: Description of people_tracking_filter
+Version: 1.0.11
+Cflags: -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/include
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/lib -lpeople_tracking_filter
+Requires: sensor_msgs std_msgs geometry_msgs people_msgs

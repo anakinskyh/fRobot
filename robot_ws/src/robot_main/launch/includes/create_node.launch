@@ -7,5 +7,4 @@
          <param name="has_gyro" value="false"/>
 	 <param name="publish_tf" value="true"/>
     </node>
-
 </launch>

@@ -92,7 +92,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"main\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -1024,292 +1024,6 @@ driver_base_geneus/fast:
 .PHONY : driver_base_geneus/fast
 
 #=============================================================================
-# Target rules for targets named freenect_nodelet
-
-# Build rule for target.
-freenect_nodelet: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 freenect_nodelet
-.PHONY : freenect_nodelet
-
-# fast build rule for target.
-freenect_nodelet/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/freenect_nodelet.dir/build.make freenect_stack/freenect_camera/CMakeFiles/freenect_nodelet.dir/build
-.PHONY : freenect_nodelet/fast
-
-#=============================================================================
-# Target rules for targets named bond_generate_messages_nodejs
-
-# Build rule for target.
-bond_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_nodejs
-.PHONY : bond_generate_messages_nodejs
-
-# fast build rule for target.
-bond_generate_messages_nodejs/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build.make freenect_stack/freenect_camera/CMakeFiles/bond_generate_messages_nodejs.dir/build
-.PHONY : bond_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named bond_generate_messages_lisp
-
-# Build rule for target.
-bond_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_lisp
-.PHONY : bond_generate_messages_lisp
-
-# fast build rule for target.
-bond_generate_messages_lisp/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/bond_generate_messages_lisp.dir/build.make freenect_stack/freenect_camera/CMakeFiles/bond_generate_messages_lisp.dir/build
-.PHONY : bond_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named bond_generate_messages_eus
-
-# Build rule for target.
-bond_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_eus
-.PHONY : bond_generate_messages_eus
-
-# fast build rule for target.
-bond_generate_messages_eus/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/bond_generate_messages_eus.dir/build.make freenect_stack/freenect_camera/CMakeFiles/bond_generate_messages_eus.dir/build
-.PHONY : bond_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_py
-
-# Build rule for target.
-diagnostic_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_py
-.PHONY : diagnostic_msgs_generate_messages_py
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_py/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make freenect_stack/freenect_camera/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
-.PHONY : diagnostic_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_nodejs
-
-# Build rule for target.
-diagnostic_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_nodejs
-.PHONY : diagnostic_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make freenect_stack/freenect_camera/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
-.PHONY : diagnostic_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_cpp
-
-# Build rule for target.
-sensor_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make freenect_stack/freenect_camera/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named bond_generate_messages_py
-
-# Build rule for target.
-bond_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_py
-.PHONY : bond_generate_messages_py
-
-# fast build rule for target.
-bond_generate_messages_py/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/bond_generate_messages_py.dir/build.make freenect_stack/freenect_camera/CMakeFiles/bond_generate_messages_py.dir/build
-.PHONY : bond_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_cpp
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_cpp
-.PHONY : dynamic_reconfigure_generate_messages_cpp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make freenect_stack/freenect_camera/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_eus
-
-# Build rule for target.
-diagnostic_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_eus
-.PHONY : diagnostic_msgs_generate_messages_eus
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_eus/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make freenect_stack/freenect_camera/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
-.PHONY : diagnostic_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_cpp
-
-# Build rule for target.
-diagnostic_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_cpp
-.PHONY : diagnostic_msgs_generate_messages_cpp
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make freenect_stack/freenect_camera/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
-.PHONY : diagnostic_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_lisp
-
-# Build rule for target.
-sensor_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make freenect_stack/freenect_camera/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_py
-
-# Build rule for target.
-sensor_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make freenect_stack/freenect_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named freenect_node
-
-# Build rule for target.
-freenect_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 freenect_node
-.PHONY : freenect_node
-
-# fast build rule for target.
-freenect_node/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/freenect_node.dir/build.make freenect_stack/freenect_camera/CMakeFiles/freenect_node.dir/build
-.PHONY : freenect_node/fast
-
-#=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_lisp
-
-# Build rule for target.
-diagnostic_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_lisp
-.PHONY : diagnostic_msgs_generate_messages_lisp
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make freenect_stack/freenect_camera/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
-.PHONY : diagnostic_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_eus
-
-# Build rule for target.
-sensor_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_eus
-.PHONY : sensor_msgs_generate_messages_eus
-
-# fast build rule for target.
-sensor_msgs_generate_messages_eus/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make freenect_stack/freenect_camera/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-.PHONY : sensor_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_gencfg
-
-# Build rule for target.
-dynamic_reconfigure_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_gencfg
-.PHONY : dynamic_reconfigure_gencfg
-
-# fast build rule for target.
-dynamic_reconfigure_gencfg/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make freenect_stack/freenect_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
-.PHONY : dynamic_reconfigure_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_nodejs
-
-# Build rule for target.
-sensor_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_nodejs
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make freenect_stack/freenect_camera/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_eus
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_eus
-.PHONY : dynamic_reconfigure_generate_messages_eus
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_eus/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make freenect_stack/freenect_camera/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_nodejs
-
-# Build rule for target.
-nodelet_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_nodejs
-.PHONY : nodelet_generate_messages_nodejs
-
-# fast build rule for target.
-nodelet_generate_messages_nodejs/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make freenect_stack/freenect_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
-.PHONY : nodelet_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_lisp
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_lisp
-.PHONY : dynamic_reconfigure_generate_messages_lisp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_lisp/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make freenect_stack/freenect_camera/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_nodejs
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_nodejs
-.PHONY : dynamic_reconfigure_generate_messages_nodejs
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_nodejs/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make freenect_stack/freenect_camera/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
-
-#=============================================================================
 # Target rules for targets named dynamic_reconfigure_generate_messages_py
 
 # Build rule for target.
@@ -1319,125 +1033,8 @@ dynamic_reconfigure_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_py/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make freenect_stack/freenect_camera/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+	$(MAKE) -f hokuyo_node/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make hokuyo_node/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_lisp
-
-# Build rule for target.
-nodelet_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_lisp
-.PHONY : nodelet_generate_messages_lisp
-
-# fast build rule for target.
-nodelet_generate_messages_lisp/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make freenect_stack/freenect_camera/CMakeFiles/nodelet_generate_messages_lisp.dir/build
-.PHONY : nodelet_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_cpp
-
-# Build rule for target.
-nodelet_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_cpp
-.PHONY : nodelet_generate_messages_cpp
-
-# fast build rule for target.
-nodelet_generate_messages_cpp/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make freenect_stack/freenect_camera/CMakeFiles/nodelet_generate_messages_cpp.dir/build
-.PHONY : nodelet_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_eus
-
-# Build rule for target.
-nodelet_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_eus
-.PHONY : nodelet_generate_messages_eus
-
-# fast build rule for target.
-nodelet_generate_messages_eus/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/nodelet_generate_messages_eus.dir/build.make freenect_stack/freenect_camera/CMakeFiles/nodelet_generate_messages_eus.dir/build
-.PHONY : nodelet_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_py
-
-# Build rule for target.
-nodelet_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_py
-.PHONY : nodelet_generate_messages_py
-
-# fast build rule for target.
-nodelet_generate_messages_py/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/nodelet_generate_messages_py.dir/build.make freenect_stack/freenect_camera/CMakeFiles/nodelet_generate_messages_py.dir/build
-.PHONY : nodelet_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named freenect_camera_gencfg
-
-# Build rule for target.
-freenect_camera_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 freenect_camera_gencfg
-.PHONY : freenect_camera_gencfg
-
-# fast build rule for target.
-freenect_camera_gencfg/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/freenect_camera_gencfg.dir/build.make freenect_stack/freenect_camera/CMakeFiles/freenect_camera_gencfg.dir/build
-.PHONY : freenect_camera_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named bond_generate_messages_cpp
-
-# Build rule for target.
-bond_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_cpp
-.PHONY : bond_generate_messages_cpp
-
-# fast build rule for target.
-bond_generate_messages_cpp/fast:
-	$(MAKE) -f freenect_stack/freenect_camera/CMakeFiles/bond_generate_messages_cpp.dir/build.make freenect_stack/freenect_camera/CMakeFiles/bond_generate_messages_cpp.dir/build
-.PHONY : bond_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named getID
-
-# Build rule for target.
-getID: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 getID
-.PHONY : getID
-
-# fast build rule for target.
-getID/fast:
-	$(MAKE) -f hokuyo_node/CMakeFiles/getID.dir/build.make hokuyo_node/CMakeFiles/getID.dir/build
-.PHONY : getID/fast
-
-#=============================================================================
-# Target rules for targets named hokuyo_node
-
-# Build rule for target.
-hokuyo_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hokuyo_node
-.PHONY : hokuyo_node
-
-# fast build rule for target.
-hokuyo_node/fast:
-	$(MAKE) -f hokuyo_node/CMakeFiles/hokuyo_node.dir/build.make hokuyo_node/CMakeFiles/hokuyo_node.dir/build
-.PHONY : hokuyo_node/fast
-
-#=============================================================================
-# Target rules for targets named libhokuyo
-
-# Build rule for target.
-libhokuyo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libhokuyo
-.PHONY : libhokuyo
-
-# fast build rule for target.
-libhokuyo/fast:
-	$(MAKE) -f hokuyo_node/CMakeFiles/libhokuyo.dir/build.make hokuyo_node/CMakeFiles/libhokuyo.dir/build
-.PHONY : libhokuyo/fast
 
 #=============================================================================
 # Target rules for targets named hokuyo_node_gencfg
@@ -1453,6 +1050,19 @@ hokuyo_node_gencfg/fast:
 .PHONY : hokuyo_node_gencfg/fast
 
 #=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_nodejs
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_nodejs
+.PHONY : dynamic_reconfigure_generate_messages_nodejs
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_nodejs/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make hokuyo_node/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
+
+#=============================================================================
 # Target rules for targets named getFirmwareVersion
 
 # Build rule for target.
@@ -1464,6 +1074,227 @@ getFirmwareVersion: cmake_check_build_system
 getFirmwareVersion/fast:
 	$(MAKE) -f hokuyo_node/CMakeFiles/getFirmwareVersion.dir/build.make hokuyo_node/CMakeFiles/getFirmwareVersion.dir/build
 .PHONY : getFirmwareVersion/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_lisp
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_lisp
+.PHONY : dynamic_reconfigure_generate_messages_lisp
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_lisp/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make hokuyo_node/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_cpp
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_cpp
+.PHONY : dynamic_reconfigure_generate_messages_cpp
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_cpp/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make hokuyo_node/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_eus
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_eus
+.PHONY : dynamic_reconfigure_generate_messages_eus
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_eus/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make hokuyo_node/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named libhokuyo
+
+# Build rule for target.
+libhokuyo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libhokuyo
+.PHONY : libhokuyo
+
+# fast build rule for target.
+libhokuyo/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/libhokuyo.dir/build.make hokuyo_node/CMakeFiles/libhokuyo.dir/build
+.PHONY : libhokuyo/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_cpp
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_cpp
+.PHONY : diagnostic_msgs_generate_messages_cpp
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make hokuyo_node/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
+.PHONY : diagnostic_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named getID
+
+# Build rule for target.
+getID: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 getID
+.PHONY : getID
+
+# fast build rule for target.
+getID/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/getID.dir/build.make hokuyo_node/CMakeFiles/getID.dir/build
+.PHONY : getID/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_eus
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_eus
+.PHONY : diagnostic_msgs_generate_messages_eus
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_eus/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make hokuyo_node/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
+.PHONY : diagnostic_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_nodejs
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_nodejs
+.PHONY : diagnostic_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make hokuyo_node/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
+.PHONY : diagnostic_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_cpp
+
+# Build rule for target.
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make hokuyo_node/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_gencfg
+
+# Build rule for target.
+dynamic_reconfigure_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_gencfg
+.PHONY : dynamic_reconfigure_gencfg
+
+# fast build rule for target.
+dynamic_reconfigure_gencfg/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make hokuyo_node/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+.PHONY : dynamic_reconfigure_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_lisp
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_lisp
+.PHONY : diagnostic_msgs_generate_messages_lisp
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make hokuyo_node/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
+.PHONY : diagnostic_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_eus
+
+# Build rule for target.
+sensor_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_eus
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make hokuyo_node/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make hokuyo_node/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_nodejs
+
+# Build rule for target.
+sensor_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_nodejs
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make hokuyo_node/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make hokuyo_node/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_py
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_py
+.PHONY : diagnostic_msgs_generate_messages_py
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_py/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make hokuyo_node/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
+.PHONY : diagnostic_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named hokuyo_node
+
+# Build rule for target.
+hokuyo_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hokuyo_node
+.PHONY : hokuyo_node
+
+# fast build rule for target.
+hokuyo_node/fast:
+	$(MAKE) -f hokuyo_node/CMakeFiles/hokuyo_node.dir/build.make hokuyo_node/CMakeFiles/hokuyo_node.dir/build
+.PHONY : hokuyo_node/fast
 
 #=============================================================================
 # Target rules for targets named nav_msgs_generate_messages_lisp
@@ -2870,6 +2701,97 @@ people_tracker/fast:
 .PHONY : people_tracker/fast
 
 #=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_nodejs
+
+# Build rule for target.
+visualization_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_nodejs
+.PHONY : visualization_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+visualization_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+.PHONY : visualization_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_eus
+
+# Build rule for target.
+visualization_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_eus
+.PHONY : visualization_msgs_generate_messages_eus
+
+# fast build rule for target.
+visualization_msgs_generate_messages_eus/fast:
+	$(MAKE) -f people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+.PHONY : visualization_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named leg_detector_gencfg
+
+# Build rule for target.
+leg_detector_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 leg_detector_gencfg
+.PHONY : leg_detector_gencfg
+
+# fast build rule for target.
+leg_detector_gencfg/fast:
+	$(MAKE) -f people/leg_detector/CMakeFiles/leg_detector_gencfg.dir/build.make people/leg_detector/CMakeFiles/leg_detector_gencfg.dir/build
+.PHONY : leg_detector_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_lisp
+
+# Build rule for target.
+visualization_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_lisp
+.PHONY : visualization_msgs_generate_messages_lisp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+.PHONY : visualization_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_cpp
+
+# Build rule for target.
+visualization_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_cpp
+.PHONY : visualization_msgs_generate_messages_cpp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+.PHONY : visualization_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_py
+
+# Build rule for target.
+visualization_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_py
+.PHONY : visualization_msgs_generate_messages_py
+
+# fast build rule for target.
+visualization_msgs_generate_messages_py/fast:
+	$(MAKE) -f people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make people/leg_detector/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+.PHONY : visualization_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named leg_detector
+
+# Build rule for target.
+leg_detector: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 leg_detector
+.PHONY : leg_detector
+
+# fast build rule for target.
+leg_detector/fast:
+	$(MAKE) -f people/leg_detector/CMakeFiles/leg_detector.dir/build.make people/leg_detector/CMakeFiles/leg_detector.dir/build
+.PHONY : leg_detector/fast
+
+#=============================================================================
 # Target rules for targets named turn_signal_genpy
 
 # Build rule for target.
@@ -3195,40 +3117,27 @@ help:
 	@echo "... driver_base_generate_messages_eus"
 	@echo "... _driver_base_generate_messages_check_deps_ConfigValue"
 	@echo "... driver_base_geneus"
-	@echo "... freenect_nodelet"
-	@echo "... bond_generate_messages_nodejs"
-	@echo "... bond_generate_messages_lisp"
-	@echo "... bond_generate_messages_eus"
-	@echo "... diagnostic_msgs_generate_messages_py"
+	@echo "... dynamic_reconfigure_generate_messages_py"
+	@echo "... hokuyo_node_gencfg"
+	@echo "... dynamic_reconfigure_generate_messages_nodejs"
+	@echo "... getFirmwareVersion"
+	@echo "... dynamic_reconfigure_generate_messages_lisp"
+	@echo "... dynamic_reconfigure_generate_messages_cpp"
+	@echo "... dynamic_reconfigure_generate_messages_eus"
+	@echo "... libhokuyo"
+	@echo "... diagnostic_msgs_generate_messages_cpp"
+	@echo "... getID"
+	@echo "... diagnostic_msgs_generate_messages_eus"
 	@echo "... diagnostic_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_cpp"
-	@echo "... bond_generate_messages_py"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
-	@echo "... diagnostic_msgs_generate_messages_eus"
-	@echo "... diagnostic_msgs_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... freenect_node"
+	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... diagnostic_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... dynamic_reconfigure_gencfg"
+	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... dynamic_reconfigure_generate_messages_eus"
-	@echo "... nodelet_generate_messages_nodejs"
-	@echo "... dynamic_reconfigure_generate_messages_lisp"
-	@echo "... dynamic_reconfigure_generate_messages_nodejs"
-	@echo "... dynamic_reconfigure_generate_messages_py"
-	@echo "... nodelet_generate_messages_lisp"
-	@echo "... nodelet_generate_messages_cpp"
-	@echo "... nodelet_generate_messages_eus"
-	@echo "... nodelet_generate_messages_py"
-	@echo "... freenect_camera_gencfg"
-	@echo "... bond_generate_messages_cpp"
-	@echo "... getID"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... diagnostic_msgs_generate_messages_py"
 	@echo "... hokuyo_node"
-	@echo "... libhokuyo"
-	@echo "... hokuyo_node_gencfg"
-	@echo "... getFirmwareVersion"
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... _create_node_generate_messages_check_deps_BatteryState"
 	@echo "... actionlib_generate_messages_py"
@@ -3337,6 +3246,13 @@ help:
 	@echo "... run_tests_face_detector_rostest_test_rgbd_true_rtest.xml"
 	@echo "... people_tracking_filter"
 	@echo "... people_tracker"
+	@echo "... visualization_msgs_generate_messages_nodejs"
+	@echo "... visualization_msgs_generate_messages_eus"
+	@echo "... leg_detector_gencfg"
+	@echo "... visualization_msgs_generate_messages_lisp"
+	@echo "... visualization_msgs_generate_messages_cpp"
+	@echo "... visualization_msgs_generate_messages_py"
+	@echo "... leg_detector"
 	@echo "... turn_signal_genpy"
 	@echo "... turn_signal_generate_messages_py"
 	@echo "... turn_signal_gencpp"

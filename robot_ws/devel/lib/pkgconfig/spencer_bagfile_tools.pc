@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel
+
+Name: spencer_bagfile_tools
+Description: Description of spencer_bagfile_tools
+Version: 0.0.3
+Cflags: -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib 
+Requires: 

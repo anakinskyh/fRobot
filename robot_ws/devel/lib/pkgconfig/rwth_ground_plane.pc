@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel
+
+Name: rwth_ground_plane
+Description: Description of rwth_ground_plane
+Version: 0.0.0
+Cflags: -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/spencer_people_tracking/utils/rwth_ground_plane/include
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib 
+Requires: 

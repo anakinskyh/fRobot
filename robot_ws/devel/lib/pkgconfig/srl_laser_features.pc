@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel
+
+Name: srl_laser_features
+Description: Description of srl_laser_features
+Version: 1.0.0
+Cflags: -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/spencer_people_tracking/detection/laser_detectors/srl_laser_features/include
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib -lsrl_laser_features
+Requires: roscpp eigen_conversions

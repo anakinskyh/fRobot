@@ -1,5 +1,7 @@
 <launch>
     <include file='$(find freenect_launch)/launch/freenect.launch'>
-        <!--<arg name='' value=''/>-->
+        <!--<arg name='libfreenect_debug' value='true'/>-->
     </include>
+
+    
 </launch>

@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel
+
+Name: rwth_ground_hog
+Description: Description of rwth_ground_hog
+Version: 0.0.0
+Cflags: -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/spencer_people_tracking/detection/monocular_detectors/rwth_ground_hog/include
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib 
+Requires: 

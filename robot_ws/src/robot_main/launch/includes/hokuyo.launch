@@ -11,7 +11,7 @@
 
     <!--send to move_base-->
     <!--<remap from="scan" to="sensor_msgs/LaserScan"/>-->
-    <!--<remap from="scan" to="LaserScan"/>-->
+    <!--<remap from="scan" to="base_scan"/>-->
   </node>
  
 </launch>

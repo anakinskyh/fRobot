@@ -1,0 +1,6 @@
+set(kinects_human_tracking_SETUP_PY_VERSION "2.0.0")
+set(kinects_human_tracking_SETUP_PY_SCRIPTS "")
+set(kinects_human_tracking_SETUP_PY_PACKAGES "kinects_human_tracking")
+set(kinects_human_tracking_SETUP_PY_PACKAGE_DIRS "src/kinects_human_tracking")
+set(kinects_human_tracking_SETUP_PY_MODULES "")
+set(kinects_human_tracking_SETUP_PY_MODULE_DIRS "")

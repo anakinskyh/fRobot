@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel
+
+Name: moveit_ros_benchmarks
+Description: Description of moveit_ros_benchmarks
+Version: 0.7.2
+Cflags: -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/moveit_ros/benchmarks/benchmarks/include
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib -lmoveit_benchmark_execution
+Requires: moveit_ros_planning moveit_ros_warehouse

@@ -1,0 +1,6 @@
+set(depth_cam_tools_SETUP_PY_VERSION "0.0.0")
+set(depth_cam_tools_SETUP_PY_SCRIPTS "")
+set(depth_cam_tools_SETUP_PY_PACKAGES "depth_cam_tools")
+set(depth_cam_tools_SETUP_PY_PACKAGE_DIRS "src/depth_cam_tools")
+set(depth_cam_tools_SETUP_PY_MODULES "")
+set(depth_cam_tools_SETUP_PY_MODULE_DIRS "")

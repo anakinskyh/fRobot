@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install
+
+Name: depth_cam_tools
+Description: Description of depth_cam_tools
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/lib 
+Requires: 

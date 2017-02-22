@@ -608,3 +608,51 @@ int main(int argc, char** argv)
 #endif
 }
 
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeeded with the following output:
+Change Dir: /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_55a8e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_55a8e.dir/build.make CMakeFiles/cmTC_55a8e.dir/build
+make[1]: Entering directory '/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_55a8e.dir/src.c.o
+/usr/bin/cc    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_55a8e.dir/src.c.o   -c /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_55a8e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55a8e.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTC_55a8e.dir/src.c.o  -o cmTC_55a8e -rdynamic 
+make[1]: Leaving directory '/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeeded with the following output:
+Change Dir: /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4a39e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4a39e.dir/build.make CMakeFiles/cmTC_4a39e.dir/build
+make[1]: Entering directory '/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4a39e.dir/src.cxx.o
+/usr/bin/c++     -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_4a39e.dir/src.cxx.o -c /home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4a39e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a39e.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTC_4a39e.dir/src.cxx.o  -o cmTC_4a39e -rdynamic 
+make[1]: Leaving directory '/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+

@@ -1,0 +1,2 @@
+set(spencer_detected_person_association_MESSAGE_FILES "")
+set(spencer_detected_person_association_SERVICE_FILES "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/spencer_people_tracking/detection/spencer_detected_person_association/srv/LookupTrackId.srv;/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/spencer_people_tracking/detection/spencer_detected_person_association/srv/LookupTrackIds.srv")

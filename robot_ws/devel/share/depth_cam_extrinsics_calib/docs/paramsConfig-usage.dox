@@ -1,0 +1,14 @@
+\subsubsection usage Usage
+\verbatim
+<node name="depth_cam_extrinsics_calib" pkg="depth_cam_extrinsics_calib" type="depth_cam_extrinsics_calib">
+  <param name="h_min" type="int" value="0" />
+  <param name="h_max" type="int" value="360" />
+  <param name="s_min" type="double" value="0.0" />
+  <param name="s_max" type="double" value="1.0" />
+  <param name="v_min" type="double" value="0.0" />
+  <param name="v_max" type="double" value="1.0" />
+  <param name="use_StatisticalOutlierRemoval" type="bool" value="False" />
+  <param name="mean_k" type="int" value="50" />
+</node>
+\endverbatim
+

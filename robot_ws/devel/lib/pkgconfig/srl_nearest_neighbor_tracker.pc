@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel
+
+Name: srl_nearest_neighbor_tracker
+Description: Description of srl_nearest_neighbor_tracker
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib 
+Requires: 

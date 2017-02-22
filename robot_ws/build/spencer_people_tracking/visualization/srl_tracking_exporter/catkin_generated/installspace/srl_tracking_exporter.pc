@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install
+
+Name: srl_tracking_exporter
+Description: Description of srl_tracking_exporter
+Version: 0.0.1
+Cflags: -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/include
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/lib 
+Requires: 

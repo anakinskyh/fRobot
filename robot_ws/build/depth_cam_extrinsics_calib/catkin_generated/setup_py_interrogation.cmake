@@ -1,0 +1,6 @@
+set(depth_cam_extrinsics_calib_SETUP_PY_VERSION "0.0.1")
+set(depth_cam_extrinsics_calib_SETUP_PY_SCRIPTS "")
+set(depth_cam_extrinsics_calib_SETUP_PY_PACKAGES "depth_cam_extrinsics_calib")
+set(depth_cam_extrinsics_calib_SETUP_PY_PACKAGE_DIRS "src/depth_cam_extrinsics_calib")
+set(depth_cam_extrinsics_calib_SETUP_PY_MODULES "")
+set(depth_cam_extrinsics_calib_SETUP_PY_MODULE_DIRS "")

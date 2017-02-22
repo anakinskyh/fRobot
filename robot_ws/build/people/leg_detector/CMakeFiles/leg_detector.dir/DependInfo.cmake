@@ -21,6 +21,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/include"
   "/opt/ros/kinetic/include/bfl"
+  "/usr/include/bullet"
   "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/people/leg_detector/include"
   "/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/people/people_tracking_filter/include"
   "/opt/ros/kinetic/include"

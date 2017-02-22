@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel
+
+Name: faker
+Description: Description of faker
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib 
+Requires: 

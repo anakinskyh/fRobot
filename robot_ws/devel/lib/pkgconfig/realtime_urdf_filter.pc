@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel
+
+Name: realtime_urdf_filter
+Description: Description of realtime_urdf_filter
+Version: 0.0.0
+Cflags: -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/realtime_urdf_filter/include
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/devel/lib 
+Requires: 

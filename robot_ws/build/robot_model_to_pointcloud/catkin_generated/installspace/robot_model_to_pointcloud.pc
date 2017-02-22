@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install
+
+Name: robot_model_to_pointcloud
+Description: Description of robot_model_to_pointcloud
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/lib 
+Requires: moveit_core moveit_ros_planning_interface interactive_markers

@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install
+
+Name: moveit_ros_planning_interface
+Description: Description of moveit_ros_planning_interface
+Version: 0.7.2
+Cflags: -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/include
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/lib -lmoveit_common_planning_interface_objects -lmoveit_planning_scene_interface -lmoveit_move_group_interface
+Requires: moveit_ros_planning moveit_ros_warehouse moveit_ros_manipulation moveit_ros_move_group

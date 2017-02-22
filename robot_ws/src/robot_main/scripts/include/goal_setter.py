@@ -5,7 +5,7 @@ import rospy
 
 class goal_setter():
 
-    def __init__(self,move_base):
+    def __init__(self,move_base = 'move_base'):
         rospy.loginfo('goal setter init')
         self.move_base = move_base # for luanch action
 

@@ -1,0 +1,8 @@
+prefix=/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install
+
+Name: moveit_ros_manipulation
+Description: Description of moveit_ros_manipulation
+Version: 0.7.2
+Cflags: -I/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/include
+Libs: -L/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/install/lib -lmoveit_pick_place_planner
+Requires: moveit_core moveit_ros_planning

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/realtime_urdf_filter/include/realtime_urdf_filter/FrameBufferObject.h
+windows.h
+-
+GL/glew.h
+-
+iostream
+-
+vector
+-
+
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/realtime_urdf_filter/src/FrameBufferObject.cpp
+realtime_urdf_filter/FrameBufferObject.h
+/home/anakin/Workspace/2016/Robot/fRobot/robot_ws/src/realtime_urdf_filter/src/realtime_urdf_filter/FrameBufferObject.h
+stdio.h
+-
+string.h
+-
+
